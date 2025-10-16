@@ -1,9 +1,10 @@
-"use client"
-import React from 'react';
-import { HeroGallery } from '@/data/HeroGalery';
+"use client";
+import React from "react";
+import Image from "next/image";
+import { HeroGallery } from "@/data/HeroGalery";
 
 const HeroSection = () => {
-  // Posiciones y estilos para cada foto
+ // Posiciones y estilos para cada foto
   const imagePositions = [
     { top: '5%', left: '8%', width: '18vw', height: '24vh', rotate: '-3deg', zIndex: 10 },
     { top: '15%', left: '28%', width: '15vw', height: '20vh', rotate: '5deg', zIndex: 15 },
@@ -24,59 +25,101 @@ const HeroSection = () => {
     { top: '38%', left: '18%', width: '12vw', height: '16vh', rotate: '4deg', zIndex: 3 },
     { top: '68%', left: '15%', width: '15vw', height: '20vh', rotate: '-3deg', zIndex: 20 },
     { top: '30%', left: '42%', width: '16vw', height: '21vh', rotate: '6deg', zIndex: 21 },
-    { top: '42%', right: '2%', width: '13vw', height: '17vh', rotate: '-7deg', zIndex: 2 },
+    { bottom: '40%', right: '2%', width: '13vw', height: '25vh', rotate: '-7deg', zIndex: 2 },
     { bottom: '2%', left: '2%', width: '14vw', height: '18vh', rotate: '5deg', zIndex: 22 },
     { bottom: '48%', left: '38%', width: '12vw', height: '16vh', rotate: '-4deg', zIndex: 1 },
     { top: '72%', right: '15%', width: '15vw', height: '20vh', rotate: '3deg', zIndex: 23 },
     { bottom: '40%', right: '38%', width: '13vw', height: '17vh', rotate: '-2deg', zIndex: 24 },
     { bottom: '2%', left: '2%', width: '14vw', height: '18vh', rotate: '5deg', zIndex: 25 },
-    { bottom: '48%', left: '38%', width: '12vw', height: '16vh', rotate: '-4deg', zIndex: 28 },
+    { top: '80%', left: '38%', width: '12vw', height: '16vh', rotate: '-4deg', zIndex: 28 },
     { top: '72%', right: '15%', width: '15vw', height: '20vh', rotate: '3deg', zIndex: 26 },
-    { bottom: '40%', right: '38%', width: '13vw', height: '17vh', rotate: '-2deg', zIndex: 227 },
-    
-    
+    { bottom: '40%', right: '38%', width: '13vw', height: '17vh', rotate: '-2deg', zIndex: 27 },
+    { top: '80%', left: '50%', width: '15vw', height: '17vh', rotate: '-4deg', zIndex: 29 },
+        
   ];
 
-    return (
-    <div className="relative w-full h-screen bg-black overflow-hidden flex items-center justify-center">
-        {/* Contenedor central con márgenes */}
-        <div className="relative w-[90%] h-[85%]">
+
+  return (
+    <section className="relative w-full h-screen bg-black overflow-hidden flex items-center justify-center">
+      {/* Contenedor central con imágenes */}
+      <div className="relative w-[90%] h-[85%]">
         {HeroGallery.map((image, idx) => {
-            const position = imagePositions[idx % imagePositions.length];
-            
-            return (
+          const position = imagePositions[idx % imagePositions.length];
+
+          return (
             <div
-                key={idx}
-                className="absolute"
-                style={{
-                top: position.top || 'auto',
-                bottom: position.bottom || 'auto',
-                left: position.left || 'auto',
-                right: position.right || 'auto',
-                width: position.width,
-                height: position.height,
+              key={idx}
+              className="absolute"
+              style={{
+                top: position.top || "auto",
+                bottom: position.bottom || "auto",
+                left: position.left || "auto",
+                right: position.right || "auto",
                 transform: `rotate(${position.rotate})`,
-                zIndex: position.zIndex
-                }}
+                zIndex: position.zIndex,
+              }}
             >
-                <img
-                src={image.src}
-                alt={image.alt}
-                className="w-full h-full object-cover rounded-sm"
+              <div
+                className="
+                  relative rounded-sm shadow-lg overflow-hidden
+                  w-[38vw] h-[22vh]       /* base móvil */
+                  sm:w-[28vw] sm:h-[22vh] /* tablets */
+                  md:w-[17vw] md:h-[20vh] /* desktop mediano */
+                  lg:w-[15vw] lg:h-[22vh] /* desktop grande */
+                "
                 style={{
-                    boxShadow: `
-                    inset 0 0 60px rgba(0,0,0,0.4),
-                    inset 0 0 30px rgba(255,0,0,0.2),
-                    0 10px 30px rgba(0,0,0,0.6)
-                    `
+                  boxShadow: `
+                    inset 0 0 50px rgba(0,0,0,0.4),
+                    inset 0 0 20px rgba(255,0,0,0.2),
+                    0 8px 20px rgba(0,0,0,0.5)
+                  `,
                 }}
+              >
+                <Image
+                  src={image.src}
+                  alt={image.alt || "Gallery image"}
+                  fill
+                  className="object-cover"
+                  priority={idx < 4}
+                  sizes="(max-width: 640px) 45vw, (max-width: 1024px) 25vw, 15vw"
                 />
+              </div>
             </div>
-            );
+          );
         })}
+      </div>
+
+      {/* Logo central */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-[999]">
+        {/* Fondo oscuro tras logo */}
+        <div
+          className="
+            absolute 
+            w-[65vw] sm:w-[50vw] md:w-[31vw]
+            h-[22vh] sm:h-[24vh] md:h-[30vh]
+            bg-black/70 rounded-xl
+          "
+        ></div>
+
+        {/* Logo */}
+        <div
+          className="relative"
+          style={{
+            filter: "drop-shadow(0 0 30px rgba(255,0,0,0.7))",
+          }}
+        >
+          <Image
+            src="/Logo_KurtCo_Blanco.svg"
+            alt="Logo KurtCo"
+            width={500}
+            height={300}
+            className="w-[45vw] sm:w-[30vw] md:w-[20vw] h-auto logo-neon"
+            priority
+          />
         </div>
-    </div>
-    );
+      </div>
+    </section>
+  );
 };
 
 export default HeroSection;
