@@ -8,7 +8,7 @@ export default function Navbar() {
   const navLinks = [
     { name: "Inicio", href: "/" },
     { name: "Quienes Somos", href: "/#about" },
-    { name: "Servicios", href: "/services" },
+    { name: "Servicios", href: "/#servicios" },
     { name: "Bandas", href: "/artists" },
     { name: "Proyectos", href: "/projects" },
     { name: "Prensa", href: "/press" },
