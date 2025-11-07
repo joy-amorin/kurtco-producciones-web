@@ -3,7 +3,7 @@ import React from 'react';
 const AboutSection = () => {
   return (
     <section id="about" className="w-full bg-black py-16">
-      <div className="container mx-auto px-8 lg:px-16 flex flex-col lg:flex-row items-center lg:items-start gap-12">
+      <div className="container mx-auto px-8 lg:px-16 flex flex-col lg:flex-row items-center lg:items-start gap-12 mt-10">
 
         {/* Lado izquierdo - Foto principal del show/equipo */}
         <div className="relative w-full lg:w-[60%] flex justify-center lg:justify-start">
@@ -18,7 +18,7 @@ const AboutSection = () => {
         <div className="w-full lg:w-[40%] flex flex-col justify-center text-[#f4f4f4]">
           {/* Título */}
           <div className="mb-8">
-            <h2 className="text-5xl md:text-6xl font-black tracking-tight leading-none mb-4">
+            <h2 className="text-5xl md:text-4xl lg:text-5xl font-black text-[#f4f4f4] tracking-tight leading-none mb-4">
               QUIÉNES<br />SOMOS
             </h2>
             <div className="w-24 h-1 bg-red-600"></div>
