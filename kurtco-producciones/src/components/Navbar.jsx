@@ -9,7 +9,7 @@ export default function Navbar() {
     { name: "Inicio", href: "/" },
     { name: "Quienes Somos", href: "/#about" },
     { name: "Servicios", href: "/#servicios" },
-    { name: "Bandas", href: "/artists" },
+    { name: "Bandas", href: "/#bandas" },
     { name: "Proyectos", href: "/projects" },
     { name: "Prensa", href: "/press" },
     { name: "Contacto", href: "/contact" },
