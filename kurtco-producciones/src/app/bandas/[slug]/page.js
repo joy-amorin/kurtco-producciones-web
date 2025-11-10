@@ -25,7 +25,7 @@ export default async function BandDetail({ params }) {
 
   return (
     <section className="min-h-screen bg-black text-white px-6 py-16 md:px-12 lg:px-24">
-      <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-start gap-10 lg:gap-16">
+      <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-start gap-10 lg:gap-16 mt-10">
         {/* Imagen */}
         <div className="w-full lg:w-1/2 rounded-md overflow-hidden shadow-lg">
           <img
