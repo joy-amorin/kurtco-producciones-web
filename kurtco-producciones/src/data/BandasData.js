@@ -24,9 +24,9 @@ export const bandas = [
       }
     },
     {
-      nombre: "Salió La Foto",
+      nombre: "Salio La Foto",
       slug: "salio la foto", 
-      foto:  "/bandas-fotos/salio-la-foto.jpeg", alt: "banda de rock saliola foto",
+      foto:  "/bandas-fotos/salio-la-foto.jpeg", alt: "banda de rock salio la foto",
       genero: "Punk Rock",
       bio: "Salió La Foto representa la nueva ola del punk uruguayo. Con una actitud desafiante y una propuesta musical directa y sin filtros, la banda se ha ganado un lugar importante en la escena local. Sus shows explosivos y su compromiso con la autogestión los convierten en referentes de la movida independiente.",
       links: {
