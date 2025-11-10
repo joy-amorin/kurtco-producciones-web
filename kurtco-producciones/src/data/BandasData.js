@@ -2,7 +2,7 @@ export const bandas = [
     {
       nombre: "Buick 8",
       slug: "buick 8",
-      foto: "https://images.unsplash.com/photo-1498038432885-c6f3f1b912ee?w=800&q=80",
+      foto: "/bandas-fotos/buick-8.jpeg", alt: "banda de rock buick 8",
       genero: "Rock Alternativo",
       bio: "Buick 8 es una banda de rock alternativo que fusiona elementos del rock clásico con sonoridades contemporáneas. Con más de 5 años de trayectoria, han logrado posicionarse como una de las propuestas más sólidas de la escena independiente uruguaya. Sus letras directas y su energía en vivo los han convertido en favoritos del público.",
       links: {
@@ -14,7 +14,7 @@ export const bandas = [
     {
       nombre: "La Zapa",
       slug: " la zapa", 
-      foto: "https://images.unsplash.com/photo-1511735111819-9a3f7709049c?w=800&q=80",
+      foto:  "/bandas-fotos/la-zapa.jpeg", alt: "banda de rock la zapa",
       genero: "Rock Nacional",
       bio: "La Zapa trae el espíritu del rock rioplatense con una propuesta fresca y auténtica. Formada por músicos con amplia trayectoria, la banda combina letras urbanas con riffs poderosos y melodías pegajosas. Su último álbum fue reconocido como uno de los mejores trabajos del año por la crítica especializada.",
       links: {
@@ -26,7 +26,7 @@ export const bandas = [
     {
       nombre: "Salió La Foto",
       slug: "salio la foto", 
-      foto: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&q=80",
+      foto:  "/bandas-fotos/salio-la-foto.jpeg", alt: "banda de rock saliola foto",
       genero: "Punk Rock",
       bio: "Salió La Foto representa la nueva ola del punk uruguayo. Con una actitud desafiante y una propuesta musical directa y sin filtros, la banda se ha ganado un lugar importante en la escena local. Sus shows explosivos y su compromiso con la autogestión los convierten en referentes de la movida independiente.",
       links: {
@@ -38,7 +38,7 @@ export const bandas = [
     {
       nombre: "Johnny Moon",
       slug: "johnny moon",
-      foto: "https://images.unsplash.com/photo-1501612780327-45045538702b?w=800&q=80",
+      foto:  "/bandas-fotos/johnny-moon.jpg", alt: "banda de rock buick 8 en vivo",
       genero: "Rock Eléctrico",
       bio: "Los Eléctricos son pura energía sobre el escenario. Su propuesta combina rock clásico con toques modernos, creando un sonido único que conecta con audiencias de todas las edades. Con tres discos editados y cientos de shows en su haber, son una apuesta segura para cualquier evento.",
       links: {
