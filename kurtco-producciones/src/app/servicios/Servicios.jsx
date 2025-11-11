@@ -55,20 +55,6 @@ const ServicesSection = () => {
           })}
         </div>
       </div>
-
-      {/* CTA */}
-      <div className="max-w-7xl mx-auto mt-20 lg:mt-32 text-center">
-        <a
-            href="https://wa.me/59895414520"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group relative inline-block text-center px-8 py-4 bg-transparent border-2 border-red-600 text-red-600 font-bold text-base lg:text-lg uppercase tracking-wider overflow-hidden transition-colors duration-300 hover:text-white">
-            <span className="absolute inset-0 bg-red-600 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out"></span>
-            <span className="relative z-10">Hablemos de tu proyecto</span>
-            <span className="absolute inset-0 border-2 border-red-600 group-hover:animate-ping opacity-0 group-hover:opacity-75"></span>
-        </a>
-      </div>
-
     </section>
   );
 };
