@@ -35,7 +35,7 @@ const EventosSection = () => {
       className="w-full min-h-screen bg-black py-20 lg:py-32 px-6 md:px-12 lg:px-20"
     >
       {/* Título */}
-      <div className="max-w-7xl mx-auto mb-16 lg:mb-24 text-center">
+      <div className="max-w-7xl mx-auto mb-16 lg:mb-24 text-center -mt-8">
         <h2 className="text-5xl font-black text-[#f4f4f4] tracking-tight leading-none mb-4">
           EVENTOS
         </h2>
@@ -45,7 +45,7 @@ const EventosSection = () => {
       {/* Layout: galería a la izquierda, calendario a la derecha */}
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row-reverse gap-12">
         {/* Calendario */}
-        <div className="lg:w-1/3 bg-[#111] p-6 rounded-md shadow-lg">
+        <div className="lg:w-1/3 bg-[#111] p-6 rounded-md shadow-lg -mt-12">
           <h3 className="text-2xl font-bold text-[#f4f4f4] mb-4 text-center">
             {meses[mesSeleccionado]}
           </h3>
@@ -96,7 +96,7 @@ const EventosSection = () => {
         </div>
 
         {/* Galería */}
-        <div className="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-4 -mt-12">
           {eventosMes.length === 0 ? (
             <p className="text-white text-center col-span-full mt-6">
               No hay eventos programados en este mes
@@ -165,7 +165,7 @@ const EventosSection = () => {
             <p className="text-sm text-white/80 mb-1">{selectedEvent.banda}</p>
             <p className="text-sm text-white/80 mb-1">{selectedEvent.lugar}</p>
             <p className="text-sm text-white/80 mb-2">
-              {new Date(selectedEvent.fecha).getDate()} de {meses[new Date(selectedEvent.fecha).getMonth()]} de {new Date(selectedEvent.fecha).getFullYear()}
+              {new Date(selectedEvent.fecha).getUTCDate()} de {meses[new Date(selectedEvent.fecha).getMonth()]} de {new Date(selectedEvent.fecha).getFullYear()}
             </p>
             <p className="text-white">{selectedEvent.descripcion}</p>
           </div>
