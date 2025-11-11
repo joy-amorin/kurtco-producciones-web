@@ -3,7 +3,7 @@ export const eventos = [
   {
     nombre: "Kurtco producciones Rock and Roll",
     fecha: "2025-12-05",
-    banda: " Inefable, Retro alcance, Johnny Moon ",
+    banda: " Bandas: Inefable, Retro alcance, Johnny Moon ",
     lugar: "El Chamuyo",
     descripcion: "21 hs",
     foto: "eventos-fotos/kurco-rock.png",
