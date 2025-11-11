@@ -11,7 +11,6 @@ export default function Navbar() {
     { name: "Servicios", href: "/#servicios" },
     { name: "Bandas", href: "/#bandas" },
     { name: "Proyectos", href: "/projects" },
-    { name: "Prensa", href: "/press" },
     { name: "Contacto", href: "/contact" },
   ];
 
@@ -81,7 +80,7 @@ export default function Navbar() {
             <Link
               key={link.name}
               href={link.href}
-              className="block text-[#f4f4f4] hover:text-[#9340ff] transition-colors duration-150"
+              className="block text-[#f4f4f4] hover:text-[#ff003c] transition-colors duration-150"
               onClick={() => setIsOpen(false)}
             >
               {link.name}
