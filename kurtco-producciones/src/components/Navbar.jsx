@@ -11,7 +11,7 @@ export default function Navbar() {
     { name: "Servicios", href: "/#servicios" },
     { name: "Bandas", href: "/#bandas" },
     { name: "Proyectos", href: "/projects" },
-    { name: "Contacto", href: "/contact" },
+    { name: "Contacto", href: "/#contacto" },
   ];
 
   return (
