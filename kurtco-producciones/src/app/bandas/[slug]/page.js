@@ -2,7 +2,7 @@ import { bandas } from "@/data/BandasData";
 import Link from "next/link";
 
 export default async function BandDetail({ params }) {
-  const { slug } = params;
+  const { slug } = await params;
 
   // Buscar banda por slug generado desde el nombre
   const banda = bandas.find(
