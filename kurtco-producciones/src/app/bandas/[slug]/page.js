@@ -13,8 +13,8 @@ const bandasMap = {
   "retroalcance": RetroalcanceBanda
 };
 
-export default function BandDetail({ params }) {
-  const { slug } = params;
+export default async function BandDetail({ params }) {
+  const { slug } = await params;
   const BandaComponent = bandasMap[slug];
 
   if (!BandaComponent) {
