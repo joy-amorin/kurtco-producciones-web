@@ -1,15 +1,14 @@
+"use client"
 import React from 'react';
 
 const AboutSection = () => {
-  // Equipo (incluye a Richard)
   const team = [
-    { name: 'Richard Biassini', role: 'Fundador & CEO', img: '/fundador-foto/richard.jpg' },
-    { name: 'Ana López', role: 'Productora', img: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&q=80' },
-    { name: 'Juan Pérez', role: 'Técnico de sonido', img: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80' },
-    { name: 'Marcos Díaz', role: 'Coordinador de marketing', img: 'https://images.unsplash.com/photo-1573497491208-6b1acb260507?w=400&q=80' },
-    { name: 'Laura Méndez', role: 'Gestora Cultural', img: 'https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=400&q=80' },
-    { name: 'Santiago Rivas', role: 'Creativo Audiovisual', img: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80' },
-    { name: 'Carla Torres', role: 'Diseñadora Gráfica', img: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=80' },
+    { name: 'Richard Biassini', role: 'Gestor y Productor General', img: '/fundador-foto/richard.jpg' },
+    { name: 'Joy Amorín', role: 'Desarrollo web', img: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&q=80' },
+    { name: 'Juliám Gadea', role: 'Fotógrafo y Realizador Audiovisual', img: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80' },
+    { name: 'Federico Zavadsky', role: 'Productor Artístico', img: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80' },
+    { name: 'Dennis Noda', role: 'Técnico en Sonido', img: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80' },
+    { name: 'Zillen Films', role: 'Productora Audiovisual', img: 'https://images.unsplash.com/photo-1573497491208-6b1acb260507?w=400&q=80' },
   ];
 
   return (
@@ -17,41 +16,73 @@ const AboutSection = () => {
       <div className="container mx-auto px-6 md:px-12 lg:px-20">
 
         {/* QUIÉNES SOMOS */}
-        <div className="mb-20 lg:mb-32">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-black text-[#f4f4f4] mb-6">
-              QUIÉNES SOMOS
-            </h2>
-            <div className="w-32 h-1 bg-red-600 mx-auto mb-12"></div>
-
-            <p className="text-base md:text-lg leading-relaxed text-[#f4f4f4]">
-              Kurtco Producciones es más que una productora: es un proyecto colectivo integrador. Integra gestores, 
-              productores artísticos, técnicos de sonido, coordinadores de marketing y creadores de contenidos, 
-              ofreciendo distintas formas de participar según el propósito de cada artista.
-            </p>
+          <div className="mb-20 lg:mb-32">
+           <div className="max-w-7xl mx-auto mb-16 lg:mb-24 text-center">
+              <h2 className="text-3xl md:text-4xl font-black text-[#f4f4f4] mb-6">
+                Quiénes Somos
+              </h2>
+              <p className="text-base md:text-lg leading-relaxed text-[#f4f4f4]">
+                KurtCo Producciones es más que una productora: es un proyecto colectivo
+                integrador. Es el acercamiento a una comunidad de artistas emergentes, con el
+                fin de hacerlos llegar a audiencias más amplias, un reto habitual para quienes
+                gestionan sus proyectos de forma independiente. Integra gestores, productores
+                artísticos, técnicos de sonido, coordinadores de marketing y creadores de
+                contenidos. Ofreciendo distintas formas de participar, según el propósito que
+                tenga cada artista para el desarrollo de su idea.
+              </p>
+            </div>
           </div>
-        </div>
 
-        {/* QUÉ BUSCAMOS */}
-        <div className="mb-20 lg:mb-32">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-black text-[#f4f4f4] mb-6">
-              QUÉ BUSCAMOS
-            </h2>
-            <div className="w-32 h-1 bg-red-600 mx-auto mb-12"></div>
+          {/* QUÉ BUSCAMOS */}
+          <div className="mb-20 lg:mb-32">
+            <div className="max-w-7xl mx-auto mb-16 lg:mb-24 text-left">
+              <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start">
+                {/* Imagen a la izquierda */}
+                <div className="w-full lg:w-1/2">
+                  <img
+                    src="hero-photos/hero-3.jpg"
+                    alt="Qué buscamos"
+                    className="w-full h-auto object-cover rounded-sm"
+                    style={{
+                      boxShadow: '0 0 30px rgba(255, 0, 0, 0.15)'
+                    }}
+                  />
+                </div>
 
-            <p className="text-base md:text-lg leading-relaxed text-[#f4f4f4]">
-              Cada convocatoria de Kurtco Pro busca potenciar a los artistas mediante la administración de recursos y
-              la coordinación de procesos, apoyándose en una comunicación efectiva y un liderazgo colaborativo.
-              Organizamos, producimos y gestionamos proyectos, llevando tus ideas al escenario real y brindando apoyo
-              en la comunicación y difusión de tus eventos.
-            </p>
+                {/* Texto a la derecha */}
+                <div className="w-full lg:w-1/2 flex flex-col justify-start">
+                  <h2 className="text-3xl md:text-4xl font-black text-[#f4f4f4] mb-6">
+                    Qué Buscamos
+                  </h2>
+
+                  <p className="text-base md:text-lg leading-relaxed text-[#f4f4f4] mb-3">
+                      Cada convocatoria de KurtCo Pro busca
+                      potenciar a los artistas mediante la
+                      administración de recursos y la
+                      coordinación de procesos, apoyándose en
+                      una comunicación efectiva y una gestión
+                      centrada en el liderazgo.
+                    </p>
+                       <p className="text-base md:text-lg leading-relaxed text-[#f4f4f4]">
+                      Proponemos organizar, producir y gestionar
+                      tus ideas, llevándolas al escenario real,
+                      desarrollando contenido y brindando apoyo
+                      en la comunicación y difusión de tus
+                      eventos.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
 
-        {/* PANEL FUNDADOR - FORMATO QUOTE */}
-        <div className="mb-20 lg:mb-32">
-          <div className="max-w-4xl mx-auto">
+
+        {/*  FUNDADOR */}
+        <div className="max-w-7xl mx-auto mb-16 lg:mb-24 text-center">
+          <h2 className="text-3xl md:text-4xl font-black text-[#f4f4f4] mb-12 text-center">
+            Fundador
+          </h2>
+          
+          <div className="max-w-7xl mx-auto mb-16 lg:mb-24 text-center">
             <div 
               className="relative p-6 md:p-8 rounded-sm flex flex-col sm:flex-row gap-6 items-start"
               style={{
@@ -78,10 +109,11 @@ const AboutSection = () => {
 
               {/* Texto */}
               <div className="flex-1 text-[#f4f4f4]">
-                <h3 className="text-xl md:text-2xl mb-4 font-black text-[#f4f4f4]">FUNDADOR</h3>
+                <h3 className="text-lg md:text-xl mb-4 font-black text-[#f4f4f4]">
+                  Richard Biassini
+                </h3>
                 <p className="text-sm md:text-base leading-relaxed mb-4">
-                  El proyecto nace dela inquietud de <span className="text-red-600 font-bold">Richard Biassini</span>, 
-                  profesional formado en Organización y Producción de Eventos, Gestor Cultural, locutor y productor 
+                  Profesional formado en Organización y Producción de Eventos, Gestor Cultural, locutor y productor 
                   de los programas radiales <em>El Rock También es Mentira</em> y <em>Subrockradio</em>. También escritor, ha producido 
                   múltiples eventos de rock, gestionado bandas de la escena local. En 2025 recibió el 
                   premio <span className="text-red-600 font-bold">Quijotes y Molinos</span>, 
@@ -94,48 +126,42 @@ const AboutSection = () => {
 
         {/* EQUIPO DE TRABAJO */}
         <div>
-          {/* Título */}
-          <div className="text-center mb-8 lg:mb-12">
-            <h3 className="text-xl md:text-2xl mb-4 font-black text-[#f4f4f4]">
-              EQUIPO DE TRABAJO
-            </h3>
-            <div className="w-32 h-1 bg-red-600 mx-auto"></div>
-          </div>
+            {/* Título */}
+          <h2 className="text-3xl md:text-4xl font-black text-[#f4f4f4] mb-12 text-center">
+            Equipo de Trabajo
+          </h2>
 
           {/* Grid de equipo */}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-4 lg:gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-7xl mx-auto">
             {team.map((member, idx) => (
               <div
                 key={idx}
-                className="group relative bg-[#111111] rounded-sm overflow-hidden transition-all duration-300 hover:-translate-y-2"
+                className="group flex flex-col items-center gap-2 p-3 rounded-sm bg-[#111111] hover:bg-[#1a1a1a] transition-all duration-300"
                 style={{
-                  boxShadow: '0 4px 20px rgba(0,0,0,0.5)'
+                  boxShadow: '0 2px 8px rgba(0,0,0,0.4)',
+                  borderBottom: '3px solid transparent',
                 }}
+                onMouseEnter={(e) => e.currentTarget.style.borderBottomColor = '#dc2626'}
+                onMouseLeave={(e) => e.currentTarget.style.borderBottomColor = 'transparent'}
               >
-                {/* Borde rojo al hover */}
-                <div className="absolute inset-0 border-2 border-red-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-sm pointer-events-none z-10"></div>
-
-                {/* Foto cuadrada */}
-                <div className="aspect-square overflow-hidden">
+                {/* Avatar pequeño */}
+                <div className="flex-shrink-0">
                   <img
                     src={member.img}
                     alt={member.name}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    className="w-18 h-18 rounded-full object-cover"
                     style={{
-                      boxShadow: `
-                        inset 0 0 60px rgba(0,0,0,0.4),
-                        inset 0 0 30px rgba(255,0,0,0.2)
-                      `
+                      boxShadow: '0 0 12px rgba(255,0,0,0.2)'
                     }}
                   />
                 </div>
 
                 {/* Info */}
-                <div className="p-3 text-center">
-                  <p className="text-[#f4f4f4] font-bold text-xs md:text-sm mb-1 leading-tight">
+                <div className="text-center w-full">
+                  <p className="text-[#f4f4f4] font-bold text-xs md:text-sm leading-tight">
                     {member.name}
                   </p>
-                  <p className="text-red-600 text-[10px] md:text-xs font-semibold uppercase tracking-wide">
+                  <p className="text-red-600 text-[10px] md:text-xs font-semibold tracking-wide leading-snug">
                     {member.role}
                   </p>
                 </div>
