@@ -21,7 +21,7 @@ export default function RetroalcanceBanda() {
         </div>
 
         {/* Bio */}
-        <div className="w-full lg:w-1/2 flex flex-col justify-center">
+         <div className="w-full lg:w-1/2 flex flex-col justify-start">
           <h1 className="text-5xl font-black text-red-600 mb-3">Retroalcance</h1>
           
            <p className="text-base md:text-lg leading-relaxed text-[#f4f4f4] mb-3">
