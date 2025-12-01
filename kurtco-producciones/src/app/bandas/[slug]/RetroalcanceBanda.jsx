@@ -8,7 +8,7 @@ export default function RetroalcanceBanda() {
         {/* Imagen */}
         <div className="w-full lg:w-1/2 rounded-md overflow-hidden shadow-lg">
           <img
-            src="/bandas-fotos/buick-8.jpeg"
+            src="https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?w=800&q=80"
             alt="Banda buick-8"
             className="w-full h-full object-cover"
             style={{
@@ -40,7 +40,7 @@ export default function RetroalcanceBanda() {
               <li>Sebastían Melgarejo: voz guitarra y teclado</li>
               <li>Diego Walter: batería</li>
               <li>Sergio Alqueres: guitarra</li>
-              <li>Leonardo Villalba: Bajo</li>
+              <li>Leonardo Villalba: bajo</li>
             </ul>
 
 

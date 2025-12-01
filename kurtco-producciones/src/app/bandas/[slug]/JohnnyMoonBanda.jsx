@@ -1,15 +1,15 @@
 import Link from "next/link";
 
-export default function SalioLAFoto() {
+export default function RetroalcanceBanda() {
   return (
     <section className="min-h-screen bg-black text-white px-6 py-16 md:px-12 lg:px-24">
-      <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-start gap-10 lg:gap-16 mt-10">
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-start gap-10 lg:gap-16 mt-10">
         
         {/* Imagen */}
-        <div className="w-full lg:w-1/2 rounded-md overflow-hidden shadow-lg">
+        <div className="w-full lg:w-1/2 rounded-md overflow-hidden shadow-lg mt-16">
           <img
             src="/bandas-fotos/johnny-moon.jpg"
-            alt="Banda de rock Johnny Moon"
+            alt="Banda buick-8"
             className="w-full h-full object-cover"
             style={{
               boxShadow: `
@@ -21,25 +21,35 @@ export default function SalioLAFoto() {
         </div>
 
         {/* Bio */}
-        <div className="w-full lg:w-1/2 flex flex-col justify-center">
-          <h1 className="text-5xl font-black text-red-600 mb-3">Johnny Moon </h1>
-          <p className="text-xl text-gray-300 mb-6">Hard Rock</p>
-          <div className="w-20 h-1 bg-red-600 mb-8 -mt-3"></div>
+         <div className="w-full lg:w-1/2 flex flex-col justify-start">
+          <h1 className="text-5xl font-black text-red-600 mb-3">Johnny Moon</h1>
           
-          <p className="text-base leading-relaxed mb-5 -mt-4">
-            bio
+           <p className="text-base md:text-lg leading-relaxed text-[#f4f4f4] mb-3">
+            Johnny Moon es una banda nueva e independiente formada en 2024 en Montevideo, Uruguay. 
+            Su sonido toma influencias que van desde el rock clásico hasta el grunge más visceral. 
+            Acaban de lanzar su primer disco, Renacer, producido en Bo Estudio con la producción de 
+            Federico Ucha, además de la participación de Mario Breuer en la mezcla y masterización de una parte del disco.
           </p>
-          <p className="text-base leading-relaxed mb-5">
-           bio
-          </p>
-            bio
-          <p className="text- leading-relaxed mb-5">
+            <p className="text-base md:text-lg leading-relaxed text-[#f4f4f4] mb-3">
+              Mientras comienzan la preproducción de su segundo disco de la mano de Federico Ucha, también realizan
+              diversas presentaciones en vivo en la escena local, contando con el management de Richard Biassini.
           </p>
 
+        
+           <p className="text-base md:text-lg leading-relaxed text-[#f4f4f4]">Integrantes:</p> 
+            <ul className="text-base md:text-lg leading-relaxed text-[#f4f4f4]">
+              <li>Johnny: voz</li>
+              <li>Nazaret García: guitarra</li>
+              <li>Marccio Silva: guitarra y coros</li>
+              <li>Martin Rodríguez: batería</li>
+              <li>Toto Aguirre: bajo</li>
+            </ul>
+
+
           {/* Links */}
-          <div className="flex flex-wrap gap-4 mb-10">
+          <div className="flex flex-wrap gap-4 mb-10 mt-8" >
             <a
-              href="https://open.spotify.com/..."
+              href="https://open.spotify.com/intl-es/artist/1G58PzrX93tkFu9lV1FkGV?si=laizI3q5QUOgHbk7lmIJSA"
               target="_blank"
               rel="noopener noreferrer"
               className="px-5 py-3 border-2 border-red-600 text-red-600 font-bold uppercase tracking-wide hover:bg-red-600 hover:text-white transition-all duration-300 rounded-sm"
@@ -47,7 +57,7 @@ export default function SalioLAFoto() {
               Spotify
             </a>
             <a
-              href="https://instagram.com/..."
+              href="https://www.instagram.com/_johnnymoon/"
               target="_blank"
               rel="noopener noreferrer"
               className="px-5 py-3 border-2 border-red-600 text-red-600 font-bold uppercase tracking-wide hover:bg-red-600 hover:text-white transition-all duration-300 rounded-sm"
@@ -55,7 +65,7 @@ export default function SalioLAFoto() {
               Instagram
             </a>
             <a
-              href="https://youtube.com/..."
+              href="https://www.youtube.com/channel/UCGtZcc47i-pYpuMc3d9HCEg"
               target="_blank"
               rel="noopener noreferrer"
               className="px-5 py-3 border-2 border-red-600 text-red-600 font-bold uppercase tracking-wide hover:bg-red-600 hover:text-white transition-all duration-300 rounded-sm"
@@ -73,6 +83,34 @@ export default function SalioLAFoto() {
           </Link>
         </div>
       </div>
+       {/* Enlaces embebidos */}
+        <div className="flex flex-col md:flex-row w-full mt-10 gap-6">
+          {/* Spotify */}
+          <div className="w-full h-full md:w-1/2 bg-[#111] rounded-2xl p-3  flex justify-center">
+            <iframe
+              className="w-full rounded-lg"
+              src="https://open.spotify.com/embed/artist/1G58PzrX93tkFu9lV1FkGV?utm_source=generator"
+              style={{ height: "360px" }}
+              frameBorder="0"
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            ></iframe>
+          </div>
+
+          {/* YouTube */}
+          <div className="w-full h-full md:w-1/2 bg-[#111] rounded-2xl p-3 shadow-md  flex justify-center">
+            <iframe
+              className="w-full rounded-lg"
+              style={{ height: "360px" }}
+              src="https://www.youtube.com/embed/kASyBOPmFAQ?si=-xVckVpFQ7QvQCkE"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
     </section>
   );
 }
