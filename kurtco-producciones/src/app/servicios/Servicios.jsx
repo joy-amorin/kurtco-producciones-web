@@ -8,13 +8,17 @@ const ServicesSection = () => {
       
       {/* Título de la sección */}
       <div className="max-w-7xl mx-auto mb-16 lg:mb-24 text-center">
-        <h2 className="text-5xl md:text-4xl lg:text-5xl font-black text-[#f4f4f4] tracking-tight leading-none mb-4 -mt-8">
-          SERVICIOS
-        </h2>
-        <div className="w-32 h-1 bg-red-600 mx-auto"></div>
+        <h2 
+                  className="text-3xl md:text-4xl font-black text-[#f4f4f4] mb-6"
+                  style={{
+                    textShadow: '0 4px 8px rgba(220, 38, 38, 0.3)'
+                  }}
+                >
+                  Servicios
+                </h2>
       </div>
 
-      {/* Grid de servicios - Automático y escalable */}
+      {/* Grid de servicios */}
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-8 -mt-10">
           {servicios.map((servicio, idx) => {
@@ -42,12 +46,12 @@ const ServicesSection = () => {
                 </div>
 
                 {/* Título */}
-                <h3 className="text-xl md:text-2xl font-black text-[#f4f4f4] mb-4 leading-tight">
+                <h3 className="text-lg md:text-xl mb-4 font-black text-[#f4f4f4]">
                   {servicio.titulo}
                 </h3>
 
                 {/* Descripción */}
-                <p className="text-base md:text-lg text-[#f4f4f4] leading-relaxed">
+                 <p className="text-sm md:text-base text-[#f4f4f4] leading-relaxed mb-4">
                   {servicio.descripcion}
                 </p>
               </div>

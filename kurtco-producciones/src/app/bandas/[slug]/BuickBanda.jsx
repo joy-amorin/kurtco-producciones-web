@@ -24,11 +24,11 @@ export default function Buickbanda() {
         <div className="w-full lg:w-1/2 flex flex-col justify-center">
           <h1 className="text-5xl font-black text-red-600 mb-6">Buick 8</h1>
           
-          <p className="text-sm md:text-base mb-5 -mt-4">
+          <p className="text-base md:text-lg leading-relaxed text-[#f4f4f4] mb-3">
             Formada en 2017 en Montevideo, Buick 8 lleva editados varios sencillos, dos sesiones y dos EP’s. 
             El grupo continúa recorriendo Montevideo y el interior del país con su potente propuesta en vivo.
           </p>
-          <p className="text-sm md:text-base mb-5">
+           <p className="text-base md:text-lg leading-relaxed text-[#f4f4f4] mb-3">
            Su trabajo discográfico y audiovisual incluye grabaciones en Lulú Records (Montevideo, 2017),
             Estudios ION (Buenos Aires, 2020), los EP’s Ecos de otro mañana (2021), Despertar del caos (2021),
              Cultura descartable (2022) y la sesión en vivo DINO - MANDRAKE por Buick 8 (2024), con versiones 
@@ -36,7 +36,7 @@ export default function Buickbanda() {
              las grabaciones incluyen videoclips que acompañan casi todas las canciones.
           </p>
 
-          <p className="text-sm md:text-base mb-5">
+           <p className="text-base md:text-lg leading-relaxed text-[#f4f4f4] mb-3">
            Integrada por Sebastián Elizalde (voz y guitarras acústicas), Matías Grunullú y Joaquín Clavijo 
            (guitarras y coros), Inder Pais (bajo) y Pablo Grimón (batería), Buick 8 combina una base firme 
            con guitarras expresivas y letras que retratan escenas cotidianas con fuerza y sensibilidad.

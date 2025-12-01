@@ -11,10 +11,14 @@ const BandsSection = () => {
     >
       {/* Título de la sección */}
       <div className="max-w-7xl mx-auto mb-16 lg:mb-24 text-center">
-        <h2 className="text-5xl md:text-5xl lg:text-5xl font-black text-[#f4f4f4] tracking-tight leading-none mb-4 -mt-8">
-          BANDAS
+        <h2 
+              className="text-3xl md:text-4xl font-black text-[#f4f4f4] mb-6"
+              style={{
+                textShadow: '0 4px 8px rgba(220, 38, 38, 0.3)'
+              }}
+            >
+            Bandas
         </h2>
-        <div className="w-32 h-1 bg-red-600 mx-auto"></div>
       </div>
 
       {/* Grid de bandas */}

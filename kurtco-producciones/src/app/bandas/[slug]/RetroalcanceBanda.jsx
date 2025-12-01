@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Buickbanda() {
+export default function RetroalcanceBanda() {
   return (
     <section className="min-h-screen bg-black text-white px-6 py-16 md:px-12 lg:px-24">
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-start gap-10 lg:gap-16 mt-10">
@@ -8,7 +8,7 @@ export default function Buickbanda() {
         {/* Imagen */}
         <div className="w-full lg:w-1/2 rounded-md overflow-hidden shadow-lg">
           <img
-            src="https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?w=800&q=80"
+            src="/bandas-fotos/buick-8.jpeg"
             alt="Banda buick-8"
             className="w-full h-full object-cover"
             style={{
@@ -24,19 +24,19 @@ export default function Buickbanda() {
         <div className="w-full lg:w-1/2 flex flex-col justify-center">
           <h1 className="text-5xl font-black text-red-600 mb-3">Retroalcance</h1>
           
-          <p className="text-sm md:text-base mb-5">
+           <p className="text-base md:text-lg leading-relaxed text-[#f4f4f4] mb-3">
             Retroalcance es el proyecto de Sebastián Melgarejo, nacido a fines de 2023 como una forma de canalizar 
             su búsqueda musical personal. Desde muy joven, Sebastián formó parte de distintas bandas y colectivos 
             creativos, explorando con pasión la composición, los arreglos y el trabajo con instrumentos.
           </p>
-          <p className="text-sm md:text-base mb-5">
+            <p className="text-base md:text-lg leading-relaxed text-[#f4f4f4] mb-3">
            La banda combina pop rock con letras íntimas, pasajes de imaginación narrativa y sensibilidad social. Las canciones 
            nacen de la guitarra acústica y se desarrollan a través del tiempo y la emoción hasta encontrar su forma definitiva.
           </p>
 
         
-           Integrantes: 
-            <ul>
+           <p className="text-base md:text-lg leading-relaxed text-[#f4f4f4]">Integrantes:</p> 
+            <ul className="text-base md:text-lg leading-relaxed text-[#f4f4f4]">
               <li>Sebastían Melgarejo: voz guitarra y teclado</li>
               <li>Diego Walter: batería</li>
               <li>Sergio Alqueres: guitarra</li>
