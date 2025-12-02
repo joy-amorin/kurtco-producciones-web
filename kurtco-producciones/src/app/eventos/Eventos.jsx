@@ -92,7 +92,7 @@ const EventosSection = () => {
           </div>
         </div>
 
-        {/* Galería - Grid de 3 columnas con thumbnails más pequeños */}
+        {/* Galería*/}
         <div className="lg:w-2/3 grid grid-cols-2 md:grid-cols-3 gap-6 -mt-12">
           {eventosMes.length === 0 ? (
             <p className="text-white text-center col-span-full mt-6">
@@ -101,7 +101,7 @@ const EventosSection = () => {
           ) : (
             eventosMes.map((evento, idx) => (
               <div key={idx} className="flex flex-col cursor-pointer items-center">
-                {/* Contenedor de imagen - thumbnail más pequeño */}
+                {/* Contenedor de imagen*/}
                 <div
                   onClick={() => setSelectedEvent(evento)}
                   className="group relative w-full max-w-[180px] aspect-[4/5] overflow-hidden rounded-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
@@ -140,7 +140,7 @@ const EventosSection = () => {
         </div>
       </div>
 
-      {/* Modal mejorado - Flyer grande + Info */}
+      {/* Modal*/}
       {selectedEvent && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4"
