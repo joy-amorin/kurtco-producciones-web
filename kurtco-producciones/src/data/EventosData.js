@@ -6,7 +6,7 @@ export const eventos = [
     banda: "Inefable, Retro alcance, Johnny Moon ",
     lugar: "El Chamuyo",
     descripcion: "21 hs",
-    foto: "eventos-fotos/kurco-rock.png",
+    foto: "/eventos-fotos/kurco-rock.png",
   },
   {
     nombre: "Kurtco producciones Rock and Roll",
@@ -14,7 +14,7 @@ export const eventos = [
     banda: "La Zapa, Los lunes no existen, Salió la foto ",
     lugar: "El Chamuyo",
     descripcion: "21 hs",
-    foto: "eventos-fotos/kurco-rock.png",
+    foto: "/eventos-fotos/kurco-rock.png",
   },
 
   
