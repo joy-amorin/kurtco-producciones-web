@@ -44,44 +44,14 @@ export default function EventosRealizados() {
                   `,
                 }}
               />
-              {/* Overlay */}
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-center justify-center">
-                <span className="text-white font-bold text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  Ver Flyer
-                </span>
-              </div>
+              
             </div>
           ))}
         </div>
       </div>
 
       {/* Modal */}
-      {selectedFlyer && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/95 p-4"
-          onClick={() => setSelectedFlyer(null)}
-        >
-          <div
-            className="relative max-w-2xl w-full"
-            onClick={(e) => e.stopPropagation()}
-          >
-            {/* Botón cerrar */}
-            <button
-              className="absolute -top-12 right-0 text-white hover:text-red-500 font-bold text-3xl transition-colors"
-              onClick={() => setSelectedFlyer(null)}
-            >
-              ✕ Cerrar
-            </button>
-            
-            {/* Flyer grande */}
-            <img
-              src={selectedFlyer}
-              alt="Flyer evento"
-              className="w-full h-auto object-contain rounded-lg shadow-2xl"
-            />
-          </div>
-        </div>
-      )}
+      
     </section>
   );
 }
