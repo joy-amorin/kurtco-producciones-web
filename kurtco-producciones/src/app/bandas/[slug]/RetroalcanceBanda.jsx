@@ -6,9 +6,9 @@ export default function RetroalcanceBanda() {
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-start gap-10 lg:gap-16 mt-10">
         
         {/* Imagen */}
-        <div className="w-full lg:w-1/2 rounded-md overflow-hidden shadow-lg">
+        <div className="w-full lg:w-1/2 rounded-md overflow-hidden shadow-lg mt-16">
           <img
-            src="https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?w=800&q=80"
+            src="/bandas-fotos/retroalcance.jpg"
             alt="Banda buick-8"
             className="w-full h-full object-cover"
             style={{

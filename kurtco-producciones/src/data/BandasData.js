@@ -27,7 +27,7 @@ export const bandas = [
     {
       nombre: "Retroalcance",
       slug: "retoralcance",
-      foto: "https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?w=800&q=80",
+      foto: "/bandas-fotos/retroalcance.jpg",
       genero: "Rock Experimental",
   
     },
