@@ -5,7 +5,8 @@ import { ChevronDown, ChevronUp } from "lucide-react"; // para la flechita
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);       
-  const [isEventsOpen, setIsEventsOpen] = useState(false); 
+  const [isEventsOpen, setIsEventsOpen] = useState(false);
+  const [isMobileEventsOpen, setIsMobileEventsOpen] = useState(false)
   const dropdownRef = useRef(null);
 
   const navLinks = [
@@ -117,19 +118,19 @@ export default function Navbar() {
             link.submenu ? (
               <div key={link.name}>
                 <button
-                  onClick={() => setIsEventsOpen(!isEventsOpen)}
+                  onClick={() => setIsMobileEventsOpen(!isMobileEventsOpen)}
                   className="block w-full text-left hover:text-[#ff003c] transition-colors duration-150 flex justify-between items-center"
                 >
                   {link.name} 
-                  {isEventsOpen ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
+                  {isMobileEventsOpen ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
                 </button>
-                {isEventsOpen && (
+                {isMobileEventsOpen && (
                   <div className="pl-4 mt-1 space-y-1">
                     {link.submenu.map((sublink) => (
                       <Link
                         key={sublink.name}
                         href={sublink.href}
-                        onClick={() => { setIsOpen(false); setIsEventsOpen(false); }}
+                        onClick={() => { setIsOpen(false); setIsMobileEventsOpen(false); }}
                         className="block text-[#f4f4f4] hover:text-[#ff003c] transition-colors duration-150"
                       >
                         {sublink.name}
