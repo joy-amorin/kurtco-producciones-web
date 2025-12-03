@@ -12,7 +12,7 @@ export default function ContactSection() {
             📱 095 414 520 &nbsp; | &nbsp; 📧 info@kurtco.com &nbsp; | &nbsp;
             📷{" "}
             <a
-              href="https://www.instagram.com/kurtco"
+              href="https://www.instagram.com/kurtco.pro"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:underline"
