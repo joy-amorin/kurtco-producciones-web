@@ -20,15 +20,12 @@ const AboutSection = () => {
           <div className="max-w-7xl mx-auto mb-16 lg:mb-24 text-center">
             <h2 
               className="text-3xl md:text-4xl font-black text-[#f4f4f4] mb-6"
-              style={{
-                textShadow: '0 4px 8px rgba(220, 38, 38, 0.3)'
-              }}
             >
               Quiénes Somos
             </h2>
             <p className="text-base md:text-lg leading-relaxed text-[#f4f4f4]">
               KurtCo Producciones es más que una productora: es un proyecto colectivo
-              integrador. Es el acercamiento a una comunidad de artistas emergentes, con el
+              integrador. Es el acercamiento a una comunidad de artistas emergentes con el
               fin de hacerlos llegar a audiencias más amplias, un reto habitual para quienes
               gestionan sus proyectos de forma independiente. Integra gestores, productores
               artísticos, técnicos de sonido, coordinadores de marketing y creadores de
@@ -58,9 +55,7 @@ const AboutSection = () => {
               <div className="w-full lg:w-1/2 flex flex-col justify-start">
                 <h2 
                   className="text-3xl md:text-4xl font-black text-[#f4f4f4] mb-6"
-                  style={{
-                    textShadow: '0 4px 8px rgba(220, 38, 38, 0.3)'
-                  }}
+                  
                 >
                   Qué Buscamos
                 </h2>
@@ -90,9 +85,6 @@ const AboutSection = () => {
           <div className="max-w-7xl mx-auto mb-16 lg:mb-24 text-center">
             <h2 
               className="text-3xl md:text-4xl font-black text-[#f4f4f4] mb-12"
-              style={{
-                textShadow: '0 4px 8px rgba(220, 38, 38, 0.3)'
-              }}
             >
               Fundador
             </h2>
@@ -144,9 +136,7 @@ const AboutSection = () => {
         <div>
           <h2 
             className="text-3xl md:text-4xl font-black text-[#f4f4f4] mb-12 text-center"
-            style={{
-              textShadow: '0 4px 8px rgba(220, 38, 38, 0.3)'
-            }}
+            
           >
             Equipo de Trabajo
           </h2>

@@ -9,13 +9,10 @@ const ServicesSection = () => {
       {/* Título de la sección */}
       <div className="max-w-7xl mx-auto mb-16 lg:mb-24 text-center">
         <h2 
-                  className="text-3xl md:text-4xl font-black text-[#f4f4f4] mb-6"
-                  style={{
-                    textShadow: '0 4px 8px rgba(220, 38, 38, 0.3)'
-                  }}
-                >
-                  Servicios
-                </h2>
+            className="text-3xl md:text-4xl font-black text-[#f4f4f4] mb-6"
+        >
+          Servicios
+        </h2>
       </div>
 
       {/* Grid de servicios */}
