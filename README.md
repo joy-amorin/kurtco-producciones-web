@@ -35,7 +35,7 @@
 ```
 
 
-## Instalacion
+## Instalación
 
 1. Clonar repositorio
 ```bash
