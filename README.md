@@ -1,8 +1,7 @@
 
 # KurtCo Producciones Web
 
-**Kurko Producciones Web** es la página oficial de KurtCo Producciones, un proyecto colectivo que busca apoyar y potenciar a artistas emergentes. La web permite mostrar información sobre el equipo, proyectos musicales, eventos y contacto, ofreciendo una experiencia moderna y profesional para la comunidad artística.
-
+**KurtCo Producciones Web** es la página oficial de KurtCo Producciones, un proyecto colectivo dedicado a apoyar y potenciar a músicos emergentes. El sitio presenta de forma moderna y profesional los servicios ofrecidos, los proyectos musicales, los eventos y el equipo de trabajo, además de facilitar el contacto directo con la productora.
 ## Tecnologías
 
 - Next.js (React)
