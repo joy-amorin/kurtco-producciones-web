@@ -1,5 +1,5 @@
 
-# Kurko Producciones Web
+# KurtCo Producciones Web
 
 **Kurko Producciones Web** es la página oficial de KurtCo Producciones, un proyecto colectivo que busca apoyar y potenciar a artistas emergentes. La web permite mostrar información sobre el equipo, proyectos musicales, eventos y contacto, ofreciendo una experiencia moderna y profesional para la comunidad artística.
 
