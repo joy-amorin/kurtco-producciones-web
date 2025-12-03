@@ -8,7 +8,7 @@ export default function SalioLaFotoBanda() {
         {/* Imagen */}
         <div className="w-full lg:w-1/2 rounded-md overflow-hidden shadow-lg mt-16">
           <img
-             src="/bandas-fotos/salio-la-foto.jpeg"
+             src="/bandas-fotos/salio-la-foto-portada.jpg"
             alt="Banda buick-8"
             className="w-full h-full object-cover"
             style={{

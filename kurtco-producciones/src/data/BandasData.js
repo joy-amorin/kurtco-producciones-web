@@ -14,7 +14,7 @@ export const bandas = [
     {
       nombre: "Salio La Foto",
       slug: "salio-la-foto", 
-      foto:  "/bandas-fotos/salio-la-foto.jpeg", alt: "banda de rock salio la foto",
+      foto:  "/bandas-fotos/salio-la-foto-portada.jpg", alt: "banda de rock salio la foto",
       genero: "Punk Rock",
     },
     {
