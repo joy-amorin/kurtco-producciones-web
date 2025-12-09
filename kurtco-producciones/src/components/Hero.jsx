@@ -90,7 +90,7 @@ const HeroSection = () => {
       </div>
 
       {/* Logo central */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-[999]">
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-50">
         {/* Fondo oscuro tras logo */}
         <div
           className="
