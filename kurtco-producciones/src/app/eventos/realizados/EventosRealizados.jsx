@@ -20,7 +20,7 @@ export default function EventosRealizados() {
     <section className="w-full min-h-screen bg-black py-20 px-6">
       {/* Título */}
       <div className="max-w-7xl mx-auto mb-16 text-center">
-        <h1 className="text-5xl font-black text-gray-100 mt-8 mb-3">Eventos Realizados</h1>
+        <h1 className="text-5xl font-black text-gray-100 mt-8">Eventos Realizados</h1>
       </div>
 
       {/* Grid de flyers */}

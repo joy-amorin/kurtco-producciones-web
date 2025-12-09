@@ -30,13 +30,11 @@ const EventosSection = () => {
   );
 
   return (
-    <section
-      id="eventos"
-      className="w-full min-h-screen bg-black py-20 lg:py-32 px-6 md:px-12 lg:px-20"
-    >
+      <section className="w-full min-h-screen bg-black py-20 px-6">
+  
       {/* Título */}
-      <div className="max-w-7xl mx-auto mb-16 lg:mb-24 text-center -mt-8">
-        <h1 className="text-5xl font-black text-[#f4f4f4] mb-3">Eventos</h1>
+     <div className="max-w-7xl mx-auto  text-center">
+        <h1 className="text-5xl font-black text-gray-100 mt-8 mb-25">Próximos eventos</h1>
       </div>
 
       {/* Layout: galería a la izquierda, calendario a la derecha */}
