@@ -22,7 +22,7 @@ export const HeroGallery = [
     { src: '/hero-photos/hero-21.jpg', alt: "banda de rock en vivo"},
     { src: '/hero-photos/hero-22.jpg', alt: "banda de rock en vivo"},
     { src: '/hero-photos/hero-23.jpg', alt: "banda de rock en vivo"},
-    { src: '/hero-photos/hero-16.jpg', alt: "banda de rock en vivo"},
+    { src: '/hero-photos/hero-18.jpg', alt: "banda de rock en vivo"},
     { src: '/hero-photos/hero-21.jpg', alt: "banda de rock en vivo"},
     { src: '/hero-photos/hero-27.jpg', alt: "banda de rock en vivo"},
     { src: '/hero-photos/hero-28.jpg', alt: "banda de rock en vivo"},
