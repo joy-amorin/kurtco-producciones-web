@@ -118,9 +118,9 @@ const AboutSection = () => {
                   <p className="text-sm md:text-base leading-relaxed mb-4">
                     Profesional formado en Organización y Producción de Eventos, Gestor Cultural, locutor y productor 
                     de los programas radiales <em>El Rock También es Mentira</em> y <em>Subrockradio</em>. También escritor, ha producido 
-                    múltiples eventos de rock, gestionado bandas de la escena local. En 2025 recibió el 
+                    múltiples eventos de rock y gestionado bandas de la escena local. En 2025 recibió el 
                     premio <span className="text-red-600 font-bold">Quijotes y Molinos</span>, 
-                    medalla a la Comunicación Solidaria de la Fundación Winners.
+                    medalla a la Comunicación Solidaria otorgada por Fundación Winners.
                   </p>
                 </div>
               </div>
