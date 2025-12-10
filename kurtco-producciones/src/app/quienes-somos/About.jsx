@@ -42,7 +42,7 @@ const AboutSection = () => {
               {/* Imagen a la izquierda */}
               <div className="w-full lg:w-1/2">
                 <img
-                  src="hero-photos/hero-3.jpg"
+                  src="hero-photos/hero-21.jpg"
                   alt="Qué buscamos"
                   className="w-full h-auto object-cover rounded-sm"
                   style={{
