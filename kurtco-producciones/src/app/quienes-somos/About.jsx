@@ -1,14 +1,16 @@
 "use client"
 import React from 'react';
+import { Briefcase, Code, Camera, Music, Headphones, Film } from 'lucide-react';
+
 
 const AboutSection = () => {
   const team = [
-    { name: 'Richard Biassini', role: 'Gestor y Productor General', img: '/fundador-foto/richard.jpg' },
-    { name: 'Joy Amorín', role: 'Desarrollo web', img: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&q=80' },
-    { name: 'Juliám Gadea', role: 'Fotógrafo y Realizador Audiovisual', img: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80' },
-    { name: 'Federico Zavadsky', role: 'Productor Artístico', img: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80' },
-    { name: 'Dennis Noda', role: 'Técnico en Sonido', img: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80' },
-    { name: 'Zillen Films', role: 'Productora Audiovisual', img: 'https://images.unsplash.com/photo-1573497491208-6b1acb260507?w=400&q=80' },
+    { name: 'Richard Biassini', role: 'Gestor y Productor General', icon: Briefcase },
+    { name: 'Joy Amorín', role: 'Desarrollo web', icon: Code },
+    { name: 'Julián Gadea', role: 'Fotógrafo y Realizador Audiovisual', icon: Camera },
+    { name: 'Federico Zavadsky', role: 'Productor Artístico', icon: Music },
+    { name: 'Dennis Noda', role: 'Técnico en Sonido', icon: Headphones },
+    { name: 'Zillen Films', role: 'Productora Audiovisual', icon: Film },
   ];
 
   return (
@@ -42,7 +44,7 @@ const AboutSection = () => {
               {/* Imagen a la izquierda */}
               <div className="w-full lg:w-1/2">
                 <img
-                  src="hero-photos/hero-21.jpg"
+                  src="hero-photos/hero-12.jpg"
                   alt="Qué buscamos"
                   className="w-full h-auto object-cover rounded-sm"
                   style={{
@@ -94,8 +96,8 @@ const AboutSection = () => {
                 className="relative p-6 md:p-8 rounded-sm flex flex-col sm:flex-row gap-6 items-start"
                 style={{
                   background: 'rgba(17, 17, 17, 0.9)',
-                  border: '2px solid rgba(255, 0, 0, 0.3)',
-                  boxShadow: '0 0 30px rgba(255, 0, 0, 0.15)'
+                  
+                 
                 }}
               >
                 {/* Foto pequeña fundador */}
@@ -104,13 +106,7 @@ const AboutSection = () => {
                     src="/fundador-foto/richard.jpg"
                     alt="Richard Biassini"
                     className="w-40 h-40 md:w-50 md:h-50 object-cover rounded-sm"
-                    style={{
-                      boxShadow: `
-                        inset 0 0 40px rgba(0,0,0,0.4),
-                        inset 0 0 20px rgba(255,0,0,0.2),
-                        0 10px 20px rgba(0,0,0,0.6)
-                      `
-                    }}
+                    
                   />
                 </div>
 
@@ -134,49 +130,34 @@ const AboutSection = () => {
 
         {/* EQUIPO DE TRABAJO */}
         <div>
-          <h2 
-            className="text-3xl md:text-4xl font-black text-[#f4f4f4] mb-12 text-center"
-            
-          >
+          <h2 className="text-3xl md:text-4xl font-black text-[#f4f4f4] mb-12 text-center">
             Equipo de Trabajo
           </h2>
 
-          {/* Grid de equipo */}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-7xl mx-auto">
-            {team.map((member, idx) => (
-              <div
-                key={idx}
-                className="group flex flex-col items-center gap-2 p-3 rounded-sm bg-[#111111] hover:bg-[#1a1a1a] transition-all duration-300"
-                style={{
-                  boxShadow: '0 2px 8px rgba(0,0,0,0.4)',
-                  borderBottom: '3px solid transparent',
-                }}
-                onMouseEnter={(e) => e.currentTarget.style.borderBottomColor = '#dc2626'}
-                onMouseLeave={(e) => e.currentTarget.style.borderBottomColor = 'transparent'}
-              >
-                {/* Avatar pequeño */}
-                <div className="flex-shrink-0">
-                  <img
-                    src={member.img}
-                    alt={member.name}
-                    className="w-18 h-18 rounded-full object-cover"
-                    style={{
-                      boxShadow: '0 0 12px rgba(255,0,0,0.2)'
-                    }}
-                  />
-                </div>
-
-                {/* Info */}
-                <div className="text-center w-full">
-                  <p className="text-[#f4f4f4] font-bold text-xs md:text-sm leading-tight">
+          {/* Grid */}
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            {team.map((member, idx) => {
+              const Icon = member.icon;
+              return (
+                <div
+                  key={idx}
+                  className="text-center p-4 hover:bg-[#111111] rounded-sm transition-all duration-300"
+                >
+                  {/* Ícono */}
+                  <div className="flex justify-center mb-3">
+                    <Icon className="w-8 h-8 text-red-600" strokeWidth={1.5} />
+                  </div>
+                  
+                  {/* Texto */}
+                  <h3 className="text-[#f4f4f4] font-bold text-base md:text-lg mb-1">
                     {member.name}
-                  </p>
-                  <p className="text-red-600 text-[10px] md:text-xs font-semibold tracking-wide leading-snug">
+                  </h3>
+                  <p className="text-red-600 text-xs md:text-sm">
                     {member.role}
                   </p>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
 
