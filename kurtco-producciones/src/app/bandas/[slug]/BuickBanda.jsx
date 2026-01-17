@@ -22,13 +22,13 @@ export default function Buickbanda() {
 
         {/* Bio */}
          <div className="w-full lg:w-1/2 flex flex-col justify-start">
-          <h1 className="text-5xl font-black text-red-600 mb-6">Buick 8</h1>
+          <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-3xl xl:text-4xl font-black text-red-600 mb-3">Buick 8</h1>
           
-          <p className="text-base md:text-lg leading-relaxed text-[#f4f4f4] mb-3">
+           <p className="text-sm sm:text-base md:text-base lg:text-sm xl:text-lg leading-relaxed text-[#f4f4f4] mb-3">
             Formada en 2017 en Montevideo, Buick 8 lleva editados varios sencillos, dos sesiones y dos EP’s. 
             El grupo continúa recorriendo Montevideo y el interior del país con su potente propuesta en vivo.
           </p>
-           <p className="text-base md:text-lg leading-relaxed text-[#f4f4f4] mb-3">
+            <p className="text-sm sm:text-base md:text-base lg:text-sm xl:text-lg leading-relaxed text-[#f4f4f4] mb-3">
            Su trabajo discográfico y audiovisual incluye grabaciones en Lulú Records (Montevideo, 2017),
             Estudios ION (Buenos Aires, 2020), los EP’s Ecos de otro mañana (2021), Despertar del caos (2021),
              Cultura descartable (2022) y la sesión en vivo DINO - MANDRAKE por Buick 8 (2024), con versiones 
@@ -36,7 +36,7 @@ export default function Buickbanda() {
              las grabaciones incluyen videoclips que acompañan casi todas las canciones.
           </p>
 
-           <p className="text-base md:text-lg leading-relaxed text-[#f4f4f4] mb-3">
+            <p className="text-sm sm:text-base md:text-base lg:text-sm xl:text-lg leading-relaxed text-[#f4f4f4] mb-3">
            Integrada por Sebastián Elizalde (voz y guitarras acústicas), Matías Grunullú y Joaquín Clavijo 
            (guitarras y coros), Inder Pais (bajo) y Pablo Grimón (batería), Buick 8 combina una base firme 
            con guitarras expresivas y letras que retratan escenas cotidianas con fuerza y sensibilidad.
@@ -48,7 +48,7 @@ export default function Buickbanda() {
               href="https://open.spotify.com/intl-es/artist/3McABe3KQUY3aAX41fF3pX?si=SfWKpB8IQJiyIwniZTl1tw"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-5 py-3 border-2 border-red-600 text-red-600 font-bold uppercase tracking-wide hover:bg-red-600 hover:text-white transition-all duration-300 rounded-sm"
+              className="text-sm sm:text-base lg:text-sm px-3 sm:px-5 lg:px-4 py-2 sm:py-3 lg:py-2 border-2 border-red-600 text-red-600 font-bold uppercase tracking-wide hover:bg-red-600 hover:text-white transition-all duration-300 rounded-sm"
             >
               Spotify
             </a>
@@ -56,15 +56,14 @@ export default function Buickbanda() {
               href="https://www.instagram.com/buick8banda/"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-5 py-3 border-2 border-red-600 text-red-600 font-bold uppercase tracking-wide hover:bg-red-600 hover:text-white transition-all duration-300 rounded-sm"
-            >
+             className="text-sm sm:text-base lg:text-sm px-3 sm:px-5 lg:px-4 py-2 sm:py-3 lg:py-2 border-2 border-red-600 text-red-600 font-bold uppercase tracking-wide hover:bg-red-600 hover:text-white transition-all duration-300 rounded-sm">
               Instagram
             </a>
             <a
               href="https://www.youtube.com/channel/UCKG5gUOzPAw35swEqsHwyAQ"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-5 py-3 border-2 border-red-600 text-red-600 font-bold uppercase tracking-wide hover:bg-red-600 hover:text-white transition-all duration-300 rounded-sm"
+              className="text-sm sm:text-base lg:text-sm px-3 sm:px-5 lg:px-4 py-2 sm:py-3 lg:py-2 border-2 border-red-600 text-red-600 font-bold uppercase tracking-wide hover:bg-red-600 hover:text-white transition-all duration-300 rounded-sm"
             >
               YouTube
             </a>

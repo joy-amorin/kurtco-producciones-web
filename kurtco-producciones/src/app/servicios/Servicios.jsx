@@ -8,9 +8,9 @@ const ServicesSection = () => {
       
       {/* Título de la sección */}
       <div className="max-w-7xl mx-auto mb-16 lg:mb-24 text-center">
-        <h2 
-            className="text-3xl md:text-4xl font-black text-[#f4f4f4] mb-6"
-        >
+         <h2 
+            className="text-3xl sm:text-4xl md:text-4xl lg:text-3xl xl:text-4xl font-black text-[#f4f4f4] mb-6"
+            >
           Servicios
         </h2>
       </div>
@@ -48,7 +48,7 @@ const ServicesSection = () => {
                 </h3>
 
                 {/* Descripción */}
-                 <p className="text-sm md:text-base text-[#f4f4f4] leading-relaxed mb-4">
+                <p className="text-sm sm:text-base md:text-base lg:text-sm xl:text-lg leading-relaxed text-[#f4f4f4] mb-3">
                   {servicio.descripcion}
                 </p>
               </div>

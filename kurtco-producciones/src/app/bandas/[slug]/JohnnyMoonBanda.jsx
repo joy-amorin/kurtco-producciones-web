@@ -22,22 +22,23 @@ export default function RetroalcanceBanda() {
 
         {/* Bio */}
          <div className="w-full lg:w-1/2 flex flex-col justify-start">
-          <h1 className="text-5xl font-black text-red-600 mb-3">Johnny Moon</h1>
+          <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-3xl xl:text-4xl font-black text-red-600 mb-3">Johnny Moon</h1>
           
-           <p className="text-base md:text-lg leading-relaxed text-[#f4f4f4] mb-3">
+            <p className="text-sm sm:text-base md:text-base lg:text-sm xl:text-lg leading-relaxed text-[#f4f4f4] mb-3">
             Johnny Moon es una banda nueva e independiente formada en 2024 en Montevideo, Uruguay. 
             Su sonido toma influencias que van desde el rock clásico hasta el grunge más visceral. 
             Acaban de lanzar su primer disco, Renacer, producido en Bo Estudio con la producción de 
             Federico Ucha, además de la participación de Mario Breuer en la mezcla y masterización de una parte del disco.
           </p>
-            <p className="text-base md:text-lg leading-relaxed text-[#f4f4f4] mb-3">
+             <p className="text-sm sm:text-base md:text-base lg:text-sm xl:text-lg leading-relaxed text-[#f4f4f4] mb-3">
               Mientras comienzan la preproducción de su segundo disco de la mano de Federico Ucha, también realizan
               diversas presentaciones en vivo en la escena local, contando con el management de Richard Biassini.
           </p>
 
         
-           <p className="text-base md:text-lg leading-relaxed text-[#f4f4f4]">Integrantes:</p> 
-            <ul className="text-base md:text-lg leading-relaxed text-[#f4f4f4]">
+           <p className="text-sm sm:text-base md:text-base lg:text-sm xl:text-lg leading-relaxed text-[#f4f4f4] mb-3">
+            Integrantes:</p> 
+            <ul className="text-sm sm:text-base md:text-base lg:text-sm xl:text-lg leading-relaxed text-[#f4f4f4] mb-3">
               <li>Johnny: voz</li>
               <li>Nazaret García: guitarra</li>
               <li>Marccio Silva: guitarra y coros</li>
@@ -52,7 +53,7 @@ export default function RetroalcanceBanda() {
               href="https://open.spotify.com/intl-es/artist/1G58PzrX93tkFu9lV1FkGV?si=laizI3q5QUOgHbk7lmIJSA"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-5 py-3 border-2 border-red-600 text-red-600 font-bold uppercase tracking-wide hover:bg-red-600 hover:text-white transition-all duration-300 rounded-sm"
+              className="text-sm sm:text-base lg:text-sm px-3 sm:px-5 lg:px-4 py-2 sm:py-3 lg:py-2 border-2 border-red-600 text-red-600 font-bold uppercase tracking-wide hover:bg-red-600 hover:text-white transition-all duration-300 rounded-sm"
             >
               Spotify
             </a>
@@ -60,7 +61,7 @@ export default function RetroalcanceBanda() {
               href="https://www.instagram.com/_johnnymoon/"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-5 py-3 border-2 border-red-600 text-red-600 font-bold uppercase tracking-wide hover:bg-red-600 hover:text-white transition-all duration-300 rounded-sm"
+              className="text-sm sm:text-base lg:text-sm px-3 sm:px-5 lg:px-4 py-2 sm:py-3 lg:py-2 border-2 border-red-600 text-red-600 font-bold uppercase tracking-wide hover:bg-red-600 hover:text-white transition-all duration-300 rounded-sm"
             >
               Instagram
             </a>
@@ -68,7 +69,7 @@ export default function RetroalcanceBanda() {
               href="https://www.youtube.com/channel/UCGtZcc47i-pYpuMc3d9HCEg"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-5 py-3 border-2 border-red-600 text-red-600 font-bold uppercase tracking-wide hover:bg-red-600 hover:text-white transition-all duration-300 rounded-sm"
+              className="text-sm sm:text-base lg:text-sm px-3 sm:px-5 lg:px-4 py-2 sm:py-3 lg:py-2 border-2 border-red-600 text-red-600 font-bold uppercase tracking-wide hover:bg-red-600 hover:text-white transition-all duration-300 rounded-sm"
             >
               YouTube
             </a>

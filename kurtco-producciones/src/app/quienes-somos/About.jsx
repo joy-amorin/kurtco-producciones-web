@@ -21,11 +21,11 @@ const AboutSection = () => {
         <div className="mb-20 lg:mb-32">
           <div className="max-w-7xl mx-auto mb-16 lg:mb-24 text-center">
             <h2 
-              className="text-3xl md:text-4xl font-black text-[#f4f4f4] mb-6"
+              className="text-3xl sm:text-4xl md:text-4xl lg:text-3xl xl:text-4xl font-black text-[#f4f4f4] mb-6"
             >
               Quiénes Somos
             </h2>
-            <p className="text-base md:text-lg leading-relaxed text-[#f4f4f4]">
+            <p className="text-sm sm:text-base md:text-base lg:text-sm xl:text-lg leading-relaxed text-[#f4f4f4] mb-3">
               KurtCo Producciones es más que una productora: es un proyecto colectivo
               integrador. Es el acercamiento a una comunidad de artistas emergentes con el
               fin de hacerlos llegar a audiencias más amplias, un reto habitual para quienes
@@ -56,13 +56,12 @@ const AboutSection = () => {
               {/* Texto a la derecha */}
               <div className="w-full lg:w-1/2 flex flex-col justify-start">
                 <h2 
-                  className="text-3xl md:text-4xl font-black text-[#f4f4f4] mb-6"
-                  
-                >
+                  className="text-3xl sm:text-4xl md:text-4xl lg:text-3xl xl:text-4xl font-black text-[#f4f4f4] mb-6"
+            >
                   Qué Buscamos
                 </h2>
 
-                <p className="text-base md:text-lg leading-relaxed text-[#f4f4f4] mb-3">
+               <p className="text-sm sm:text-base md:text-base lg:text-sm xl:text-lg leading-relaxed text-[#f4f4f4] mb-3">
                   Cada convocatoria de KurtCo Pro busca
                   potenciar a los artistas mediante la
                   administración de recursos y la
@@ -70,7 +69,7 @@ const AboutSection = () => {
                   una comunicación efectiva y una gestión
                   centrada en el liderazgo.
                 </p>
-                <p className="text-base md:text-lg leading-relaxed text-[#f4f4f4]">
+               <p className="text-sm sm:text-base md:text-base lg:text-sm xl:text-lg leading-relaxed text-[#f4f4f4] mb-3">
                   Proponemos organizar, producir y gestionar
                   tus ideas, llevándolas al escenario real,
                   desarrollando contenido y brindando apoyo
@@ -85,8 +84,8 @@ const AboutSection = () => {
         {/* FUNDADOR */}
         <div className="mb-20 lg:mb-32">
           <div className="max-w-7xl mx-auto mb-16 lg:mb-24 text-center">
-            <h2 
-              className="text-3xl md:text-4xl font-black text-[#f4f4f4] mb-12"
+             <h2 
+                  className="text-3xl sm:text-4xl md:text-4xl lg:text-3xl xl:text-4xl font-black text-[#f4f4f4] mb-12"
             >
               Fundador
             </h2>
@@ -115,7 +114,7 @@ const AboutSection = () => {
                   <h3 className="text-lg md:text-xl mb-4 font-black text-[#f4f4f4]">
                     Richard Biassini
                   </h3>
-                  <p className="text-sm md:text-base leading-relaxed mb-4">
+                  <p className="text-sm sm:text-base md:text-base lg:text-sm xl:text-lg leading-relaxed text-[#f4f4f4] mb-3">
                     Profesional formado en Organización y Producción de Eventos, Gestor Cultural, locutor y productor 
                     de los programas radiales <em>El Rock También es Mentira</em> y <em>Subrockradio</em>. También escritor, ha producido 
                     múltiples eventos de rock y gestionado bandas de la escena local. En 2025 recibió el 
@@ -130,7 +129,7 @@ const AboutSection = () => {
 
         {/* EQUIPO DE TRABAJO */}
         <div>
-          <h2 className="text-3xl md:text-4xl font-black text-[#f4f4f4] mb-12 text-center">
+          <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-3xl xl:text-4xl font-black text-[#f4f4f4] mb-8 text-center">
             Equipo de Trabajo
           </h2>
 

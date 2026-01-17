@@ -12,8 +12,7 @@ const BandsSection = () => {
       {/* Título de la sección */}
       <div className="max-w-7xl mx-auto mb-16 lg:mb-24 text-center">
         <h2 
-            className="text-3xl md:text-4xl font-black text-[#f4f4f4] mb-6"
-            
+            className="text-3xl sm:text-4xl md:text-4xl lg:text-3xl xl:text-4xl font-black text-[#f4f4f4] mb-6"
             >
             Bandas
         </h2>

@@ -3,12 +3,13 @@ export default function ContactSection() {
     <section id="contacto" className="relative w-full min-h-screen bg-black py-20 lg:py-32 px-6 md:px-12 lg:px-20">
       <div className="max-w-7xl mx-auto text-center flex flex-col items-center gap-3 px-6">
 
-        <h2  className="text-3xl md:text-4xl font-black text-[#f4f4f4] mb-6"
-           >
+        <h2 
+            className="text-3xl sm:text-4xl md:text-4xl lg:text-3xl xl:text-4xl font-black text-[#f4f4f4] mb-6"
+            >
           Contacto
         </h2>
 
-        <p className="text-base md:text-lg text-[#f4f4f4]">
+        <p className="text-sm sm:text-base md:text-base lg:text-sm xl:text-lg leading-relaxed text-[#f4f4f4] mb-3">
             📱 095 414 520 &nbsp; | &nbsp; 📧 info@kurtco.com &nbsp; | &nbsp;
             📷{" "}
             <a

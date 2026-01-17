@@ -22,15 +22,15 @@ export default function SalioLaFotoBanda() {
 
         {/* Bio */}
          <div className="w-full lg:w-1/2 flex flex-col justify-start">
-          <h1 className="text-5xl font-black text-red-600 mb-3">Salió la foto</h1>
+          <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-3xl xl:text-4xl font-black text-red-600 mb-3">Salió la foto</h1>
           
-           <p className="text-base md:text-lg leading-relaxed text-[#f4f4f4] mb-3">
+           <p className="text-sm sm:text-base md:text-base lg:text-sm xl:text-lg leading-relaxed text-[#f4f4f4] mb-3">
              Salió la Foto es una banda de rock uruguaya formada a finales de 2023. Lo que comenzó como un proyecto entre amigos —Juan, Gonza y Cococho— 
              fue tomando forma hasta consolidarse a mediados de 2024 con la incorporación de Esteban y Giuliano, completando así la formación 
              actual. Desde sus inicios, la banda se enfocó en crear música original con un sonido que combina la potencia del rock clásico, 
              la guitarra electroacústica y la distorsión eléctrica, acompañados por un bajo potente y una batería sólida.
           </p>
-          <p className="text-base md:text-lg leading-relaxed text-[#f4f4f4] mb-3">
+           <p className="text-sm sm:text-base md:text-base lg:text-sm xl:text-lg leading-relaxed text-[#f4f4f4] mb-3">
             Su propuesta aborda letras vinculadas a la realidad social y las experiencias cotidianas, 
             buscando resonar con la audiencia desde un lugar honesto y directo. 
             El debut en vivo fue el 30 de noviembre de 2024 en <em>The Shannon</em>, marcando el inicio de una nueva etapa. 
@@ -38,8 +38,9 @@ export default function SalioLaFotoBanda() {
             nuevas conexiones y consolidar su identidad.
           </p>
 
-           <p className="text-base md:text-lg leading-relaxed text-[#f4f4f4]">Integrantes:</p> 
-            <ul className="text-base md:text-lg leading-relaxed text-[#f4f4f4]">
+           <p className="text-sm sm:text-base md:text-base lg:text-sm xl:text-lg leading-relaxed text-[#f4f4f4] mb-3">
+            Integrantes:</p> 
+            <ul className="text-sm sm:text-base md:text-base lg:text-sm xl:text-lg leading-relaxed text-[#f4f4f4] mb-3">
               <li>Juan Pablo López: guitarra y coros</li>
               <li>Claudio "Cococho" Arosa: voz</li>
               <li>Esteban Louise: guitarra</li>
@@ -54,7 +55,7 @@ export default function SalioLaFotoBanda() {
               href="https://www.instagram.com/saliolafoto/"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-5 py-3 border-2 border-red-600 text-red-600 font-bold uppercase tracking-wide hover:bg-red-600 hover:text-white transition-all duration-300 rounded-sm"
+              className="text-sm sm:text-base lg:text-sm px-3 sm:px-5 lg:px-4 py-2 sm:py-3 lg:py-2 border-2 border-red-600 text-red-600 font-bold uppercase tracking-wide hover:bg-red-600 hover:text-white transition-all duration-300 rounded-sm"
             >
               Instagram
             </a>
@@ -62,7 +63,7 @@ export default function SalioLaFotoBanda() {
               href="https://www.youtube.com/@Sali%C3%B3lafoto"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-5 py-3 border-2 border-red-600 text-red-600 font-bold uppercase tracking-wide hover:bg-red-600 hover:text-white transition-all duration-300 rounded-sm"
+             className="text-sm sm:text-base lg:text-sm px-3 sm:px-5 lg:px-4 py-2 sm:py-3 lg:py-2 border-2 border-red-600 text-red-600 font-bold uppercase tracking-wide hover:bg-red-600 hover:text-white transition-all duration-300 rounded-sm"
             >
               YouTube
             </a>

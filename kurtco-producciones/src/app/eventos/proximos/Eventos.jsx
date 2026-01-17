@@ -34,7 +34,7 @@ const EventosSection = () => {
   
       {/* Título */}
      <div className="max-w-7xl mx-auto  text-center">
-        <h1 className="text-5xl font-black text-gray-100 mt-8 mb-25">Próximos eventos</h1>
+        <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-3xl xl:text-4xl font-black text-gray-100 mt-8 mb-25">Próximos eventos</h1>
       </div>
 
       {/* Layout: galería a la izquierda, calendario a la derecha */}
