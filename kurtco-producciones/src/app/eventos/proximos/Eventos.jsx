@@ -138,7 +138,7 @@ useEffect(() => {
           onClick={() => setSelectedEvent(null)}
         >
           <div
-            className="bg-[#111] rounded-lg w-full max-w-4xl max-h-[85vh] overflow-y-auto relative"
+            className="bg-[#111] rounded-lg max-w-md sm:max-w-lg md:max-w-2xl lg:max-w-3xl xl:max-w-2xl xl:mt-10 max-h-[75vh] md:max-h-[80vh] lg:max-h-[85vh]  overflow-y-auto relative"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Botón cerrar */}
