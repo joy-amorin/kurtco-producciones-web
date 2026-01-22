@@ -63,7 +63,7 @@ useEffect(() => {
 
           <div className="flex justify-between mt-4">
             <button
-              className="text-red-600 font-bold"
+              className="text-red-600 font-bold cursor-pointer"
               onClick={() =>
                 setMesSeleccionado((prev) => (prev === 0 ? 11 : prev - 1))
               }
@@ -71,7 +71,7 @@ useEffect(() => {
               ←
             </button>
             <button
-              className="text-red-600 font-bold"
+              className="text-red-600 font-bold cursor-pointer"
               onClick={() =>
                 setMesSeleccionado((prev) => (prev === 11 ? 0 : prev + 1))
               }
@@ -143,7 +143,7 @@ useEffect(() => {
           >
             {/* Botón cerrar */}
             <button
-              className="absolute top-3 right-3 z-20 text-red-600 hover:text-red-500 font-bold text-2xl bg-black/70 rounded-full w-9 h-9 flex items-center justify-center transition-all"
+              className="absolute top-3 right-3 z-20 text-red-600 hover:text-red-500 font-bold text-2xl bg-black/70 rounded-full w-9 h-9 flex items-center justify-center transition-all cursor-pointer"
               onClick={() => setSelectedEvent(null)}
             >
               ×
