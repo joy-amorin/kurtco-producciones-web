@@ -1,39 +1,15 @@
 
 # KurtCo Producciones Web
 
-**KurtCo Producciones Web** es la página oficial de KurtCo Producciones, un proyecto colectivo dedicado a apoyar y potenciar a músicos emergentes. El sitio presenta de forma moderna y profesional los servicios ofrecidos, los proyectos musicales, los eventos y el equipo de trabajo, además de facilitar el contacto directo con la productora.
+**KurtCo Producciones Web** es el sitio web oficial de KurtCo Producciones, un proyecto colectivo orientado a la gestión, producción y difusión de músicos y artistas emergentes.
+La aplicación presenta información institucional, servicios, proyectos musicales, eventos y el equipo de trabajo, además de ofrecer un canal de contacto directo con la productora.
 ## Tecnologías
 
-- Next.js (React)
+- Next.js
 - CSS / Estilos: Tailwind CSS
 - JavaScript
 
-
-## Estructura del proyecto
-
-```plaintext
-  src/
- ├── app/
- │    ├── bandas/
- │    ├── contacto/
- │    ├── equipo/
- │    ├── quienes-somos/
- │    └── servicios/
- │
- ├── components/
- │    ├── Hero.jsx
- │    └── Navbar.jsx
- │
- └── data/
-      ├── BandasData.js
-      ├── EventosData.js
-      ├── HeroGalery.js
-      └── ServiciosData.js
-
-
 ```
-
-
 ## Instalación
 
 1. Clonar repositorio
@@ -47,7 +23,7 @@
 ```
 3. Ejecutar el proyecto en modo desarrollo
 ```bash
-  npm rin dev
+  npm run dev
 ```
 4. Abrir el navegador
 ```bash
