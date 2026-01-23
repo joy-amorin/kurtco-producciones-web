@@ -5,17 +5,15 @@
 La aplicación presenta información institucional, servicios, proyectos musicales, eventos y el equipo de trabajo, además de ofrecer un canal de contacto directo con la productora.
 ## Tecnologías
 
+
 - Next.js
 - CSS / Estilos: Tailwind CSS
 - JavaScript
-
-```
 ## Instalación
 
 1. Clonar repositorio
 ```bash
-  git clone https://github.com/tu-usuario/kurko-producciones-web.git
-
+   git clone https://github.com/joy-amorin/kurko-producciones-web.git
 ```
 2. Instalar dependencias
 ```bash
