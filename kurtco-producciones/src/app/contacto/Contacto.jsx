@@ -10,7 +10,7 @@ export default function ContactSection() {
         </h2>
 
         <p className="text-sm sm:text-base md:text-base lg:text-sm xl:text-lg leading-relaxed text-[#f4f4f4] mb-3">
-            📱 095 414 520 &nbsp; | &nbsp; 📧 info@kurtco.com &nbsp; | &nbsp;
+            📱 095 414 520 &nbsp; | &nbsp; 📧 kurtcoproducciones@gmail.com &nbsp; | &nbsp;
             📷{" "}
             <a
               href="https://www.instagram.com/kurtco.pro"
