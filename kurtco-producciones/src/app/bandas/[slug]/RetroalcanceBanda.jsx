@@ -48,7 +48,7 @@ export default function RetroalcanceBanda() {
           {/* Links */}
          <div className="flex flex-wrap gap-4 mb-10 mt-8">
             <a
-              href="https://open.spotify.com/..."
+              href="https://open.spotify.com/intl-es/artist/3vcrhz4vYBBAOKPvtONFyj?si=Wq0-UEBkQAG84GgCHnlhWA"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm sm:text-base lg:text-sm px-3 sm:px-5 lg:px-4 py-2 sm:py-3 lg:py-2 border-2 border-red-600 text-red-600 font-bold uppercase tracking-wide hover:bg-red-600 hover:text-white transition-all duration-300 rounded-sm"
@@ -56,7 +56,7 @@ export default function RetroalcanceBanda() {
               Spotify
             </a>
             <a
-              href="https://www.instagram.com/..."
+              href="https://www.instagram.com/retro_alcance/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm sm:text-base lg:text-sm px-3 sm:px-5 lg:px-4 py-2 sm:py-3 lg:py-2 border-2 border-red-600 text-red-600 font-bold uppercase tracking-wide hover:bg-red-600 hover:text-white transition-all duration-300 rounded-sm"
@@ -64,7 +64,7 @@ export default function RetroalcanceBanda() {
               Instagram
             </a>
             <a
-              href="https://www.youtube.com/..."
+              href="https://www.youtube.com/channel/UCtBzIfrFpdiRu6m_rqaMSYQ"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm sm:text-base lg:text-sm px-3 sm:px-5 lg:px-4 py-2 sm:py-3 lg:py-2 border-2 border-red-600 text-red-600 font-bold uppercase tracking-wide hover:bg-red-600 hover:text-white transition-all duration-300 rounded-sm"
