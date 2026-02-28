@@ -27,7 +27,15 @@ export const bandas = [
     {
       nombre: "Retroalcance",
       slug: "retoralcance",
-      foto: "/bandas-fotos/retroalcance.jpg",
+      foto: "/bandas-fotos/retroalcance.jpg", alt: "banda de rock retroalcance",
+      genero: "Rock Experimental",
+  
+    },
+
+    {
+      nombre: "Autos",
+      slug: "autos",
+      foto: "/bandas-fotos/autos.jpg",  alt: "banda de rock autos",
       genero: "Rock Experimental",
   
     },

@@ -4,13 +4,15 @@ import ZapaBanda from "./ZapaBanda";
 import SalioLaFotoBanda from "./SalioLaFotoBanda"
 import JohnnyMoonBanda from "./JohnnyMoonBanda"
 import RetroalcanceBanda from "./RetroalcanceBanda"
+import AutosBanda from "./AutosBanda"
 
 const bandasMap = {
   "buick-8": BuickBanda,
   "la-zapa": ZapaBanda,
   "salio-la-foto": SalioLaFotoBanda,
   "johnny-moon": JohnnyMoonBanda,
-  "retroalcance": RetroalcanceBanda
+  "retroalcance": RetroalcanceBanda,
+  "autos": AutosBanda,
 };
 
 export default async function BandDetail({ params }) {
