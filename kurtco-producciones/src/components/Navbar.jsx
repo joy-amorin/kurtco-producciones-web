@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
-import { ChevronDown, ChevronUp } from "lucide-react"; // para la flechita
+import { ChevronDown, ChevronUp } from "lucide-react";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);       
@@ -15,8 +15,8 @@ export default function Navbar() {
     { name: "Servicios", href: "/#servicios" },
     { name: "Bandas", href: "/#bandas" },
     { name: "Eventos", href: "/eventos", submenu: [
-        { name: "Próximos eventos", href: "/eventos/proximos" },
-        { name: "Eventos realizados", href: "/eventos/realizados" },
+        { name: "Próximos eventos", href: "/calendario-eventos/proximos" },
+        { name: "Eventos realizados", href: "/calendario-eventos/realizados" },
       ] 
     },
     { name: "Contacto", href: "/#contacto" },
