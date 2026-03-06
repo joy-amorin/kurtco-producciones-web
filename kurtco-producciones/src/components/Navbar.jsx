@@ -14,7 +14,8 @@ export default function Navbar() {
     { name: "Quienes Somos", href: "/#about" },
     { name: "Servicios", href: "/#servicios" },
     { name: "Bandas", href: "/#bandas" },
-    { name: "Eventos", href: "/eventos", submenu: [
+    { name: "Producciones", href: "/producciones" },
+    { name: "Eventos", href: "/calendario", submenu: [
         { name: "Próximos eventos", href: "/calendario-eventos/proximos" },
         { name: "Eventos realizados", href: "/calendario-eventos/realizados" },
       ] 

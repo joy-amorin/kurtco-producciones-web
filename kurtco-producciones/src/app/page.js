@@ -4,6 +4,7 @@ import About from '@/app/quienes-somos/About'
 import Servicios from '@/app/servicios/Servicios'
 import Bandas from '@/app/bandas/Bandas'
 import Contacto from '@/app/contacto/Contacto'
+import Producciones from '@/app/producciones/Producciones'
 
 export default function Home() {
   return (
@@ -13,7 +14,10 @@ export default function Home() {
       <About />
       <Servicios />
       <Bandas />
-      <Contacto /> 
+      <Producciones />
+      <Contacto />
+     
+
     </>
   );
 }
