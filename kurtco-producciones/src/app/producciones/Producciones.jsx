@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const producciones = [
   {
-    slug: "inauguracion-productora",
+    slug: "primer-lanzamiento",
     nombre: "Inauguración de la Productora",
     subtitulo: "El comienzo de algo grande",
     fecha: "Marzo 2025",
@@ -16,14 +16,14 @@ const producciones = [
     principal: true,
   },
   {
-    slug: "segunda-produccion",
+    slug: "segundo-lanzamiento",
     nombre: "Segunda Producción",
     subtitulo: "La escena sigue creciendo",
     fecha: "Junio 2025",
     lugar: "Buenos Aires",
     cantidadBandas: 4,
     foto: "https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?w=800&q=80",
-    alt: "Segunda producción",
+    alt: "Primer lanzamiento",
     categoria: "Show en vivo",
     principal: true,
   },
@@ -34,7 +34,7 @@ const producciones = [
     lugar: "Buenos Aires",
     cantidadBandas: 5,
     foto: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&q=80",
-    alt: "Ciclo de Rock Porteño",
+    alt: "Segundo lanzamiento",
     categoria: "Show en vivo",
     principal: false,
   },
