@@ -1,15 +1,32 @@
-import ProduccionDetalle from "./Lanzamiento2"; // ajusta si cambia el nombre
+import Link from "next/link";
+import Lanzamiento1 from "./Lanzamiento1";
+import Lanzamiento2 from "./Lanzamiento2";
 import { producciones } from "@/data/produccionesData";
 
-export default async function Page({ params }) {
-  const { slug } = await params;
-  
+const produccionesMap = {
+  "primer-lanzamiento": Lanzamiento1,
+  "segundo-lanzamiento": Lanzamiento2,
+};
 
+export default async function ProduccionDetail({ params }) {
+  const { slug } = params;
+
+  const ProduccionComponent = produccionesMap[slug];
   const produccion = producciones.find(p => p.slug === slug);
 
-  if (!produccion) {
-    return <div>No encontrado</div>;
+  if (!ProduccionComponent) {
+    return (
+      <section className="min-h-screen bg-black text-white flex flex-col items-center justify-center">
+        <p className="text-xl mb-6">Evento no encontrado.</p>
+        <Link
+          href="/producciones"
+          className="text-red-600 underline hover:text-red-400 transition-colors"
+        >
+          ← Volver al listado
+        </Link>
+      </section>
+    );
   }
 
-  return <ProduccionDetalle produccion={produccion} />;
+  return <ProduccionComponent produccion={produccion} />;
 }

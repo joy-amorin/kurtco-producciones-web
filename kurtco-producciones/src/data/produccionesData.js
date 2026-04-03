@@ -23,7 +23,7 @@ export const producciones = [
 },
 {
   slug: "segundo-lanzamiento",
-  nombre: "Inauguración de la Productora",
+  nombre: "Kurtco Producciones rock and roll: día dos",
   subtitulo: "El comienzo de algo grande",
   fecha: "5 de diciembre, 2025",
   lugar: "El chamuyo",

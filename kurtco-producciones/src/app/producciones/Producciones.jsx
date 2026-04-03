@@ -1,66 +1,7 @@
 "use client";
 import React, { useRef, useState, useEffect } from "react";
 import Link from "next/link";
-
-const producciones = [
-  {
-    slug: "primer-lanzamiento",
-    nombre: "Inauguración de la Productora",
-    subtitulo: "El comienzo de algo grande",
-    fecha: "Marzo 2025",
-    lugar: "Buenos Aires",
-    cantidadBandas: 3,
-    foto: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&q=80",
-    alt: "Inauguración de la productora",
-    categoria: "Show en vivo",
-    principal: true,
-  },
-  {
-    slug: "segundo-lanzamiento",
-    nombre: "Segunda Producción",
-    subtitulo: "La escena sigue creciendo",
-    fecha: "Junio 2025",
-    lugar: "Buenos Aires",
-    cantidadBandas: 4,
-    foto: "https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?w=800&q=80",
-    alt: "Primer lanzamiento",
-    categoria: "Show en vivo",
-    principal: true,
-  },
-  {
-    slug: "evento-01",
-    nombre: "Ciclo de Rock Porteño",
-    fecha: "Agosto 2025",
-    lugar: "Buenos Aires",
-    cantidadBandas: 5,
-    foto: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&q=80",
-    alt: "Segundo lanzamiento",
-    categoria: "Show en vivo",
-    principal: false,
-  },
-  {
-    slug: "evento-02",
-    nombre: "Showcase Acústico",
-    fecha: "Septiembre 2025",
-    lugar: "Buenos Aires",
-    cantidadBandas: 3,
-    foto: "https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?w=800&q=80",
-    alt: "Showcase Acústico",
-    categoria: "Acústico",
-    principal: false,
-  },
-  {
-    slug: "evento-03",
-    nombre: "Noche de Bandas Nuevas",
-    fecha: "Octubre 2025",
-    lugar: "Buenos Aires",
-    cantidadBandas: 6,
-    foto: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&q=80",
-    alt: "Noche de Bandas Nuevas",
-    categoria: "Show en vivo",
-    principal: false,
-  },
-];
+import { producciones } from "@/data/produccionesData";
 
 // Config del hero
 const heroConfig = {
@@ -176,7 +117,7 @@ const ProduccionCard = ({ evento, idx }) => {
       >
         <img
           src={evento.foto}
-          alt={evento.alt}
+          alt={evento.nombre}
           className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105"
         />
         <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-all duration-300" />
@@ -229,7 +170,6 @@ const ProduccionRow = ({ evento, idx }) => {
       <div className="grid items-center gap-6 md:gap-10 py-8 md:py-10"
         style={{ gridTemplateColumns: "auto auto 1fr auto" }}>
 
-        {/* Número */}
         <div className="hidden md:block w-14 shrink-0">
           <span className="font-black leading-none select-none transition-colors duration-300"
             style={{
@@ -242,66 +182,24 @@ const ProduccionRow = ({ evento, idx }) => {
           </span>
         </div>
 
-        {/* Foto */}
         <div className="relative overflow-hidden shrink-0"
           style={{
             width: "clamp(110px, 16vw, 200px)",
             aspectRatio: "16/10",
-            boxShadow: hovered ? "0 8px 32px rgba(220,38,38,0.2)" : "0 4px 20px rgba(0,0,0,0.5)",
-            transition: "box-shadow 0.4s",
           }}>
           <img
             src={evento.foto}
-            alt={evento.alt}
+            alt={evento.nombre}
             className="w-full h-full object-cover"
-            style={{
-              transform: hovered ? "scale(1.08)" : "scale(1)",
-              filter: hovered ? "grayscale(0%)" : "grayscale(20%)",
-              transition: "transform 0.7s ease, filter 0.5s ease",
-            }}
           />
-          <div className="absolute inset-0 transition-all duration-300"
-            style={{ background: hovered ? "rgba(0,0,0,0.1)" : "rgba(0,0,0,0.35)" }} />
-          <div className="absolute bottom-0 left-0 h-[3px] bg-red-600 transition-all duration-500"
-            style={{ width: hovered ? "100%" : "0%" }} />
         </div>
 
-        {/* Título y datos */}
         <div className="flex flex-col justify-center min-w-0">
-          <span className="md:hidden font-black text-2xl leading-none mb-3 select-none text-[#1e1e1e]"
-            style={{ fontFamily: "'Bebas Neue', 'Impact', sans-serif" }}>
-            {numero}
-          </span>
-          <div className="flex items-center gap-3 mb-3">
-            <div className="h-px bg-red-600 transition-all duration-500"
-              style={{ width: hovered ? 24 : 0 }} />
-            <span className="text-red-600 text-[10px] font-mono uppercase tracking-[0.3em]">
-              {evento.categoria || "Show en vivo"}
-            </span>
-          </div>
-          <h3 className="font-black text-[#f4f4f4] leading-tight mb-3"
-            style={{ fontSize: "clamp(1.4rem, 2.2vw, 2rem)" }}>
+          <h3 className="font-black text-[#f4f4f4]">
             {evento.nombre}
           </h3>
-          <div className="flex flex-wrap items-center gap-2 text-sm md:text-base text-gray-500">
-            <span>{evento.fecha}</span>
-            <span className="w-1 h-1 rounded-full bg-[#333]" />
-            <span>{evento.lugar}</span>
-          </div>
         </div>
 
-        {/* Flecha */}
-        <div className="shrink-0 hidden sm:flex items-center justify-center transition-all duration-300"
-          style={{
-            width: 44, height: 44,
-            border: `1px solid ${hovered ? "#dc2626" : "#1e1e1e"}`,
-            background: hovered ? "#dc2626" : "transparent",
-          }}>
-          <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"
-            style={{ color: hovered ? "#fff" : "#2a2a2a", transform: hovered ? "translateX(2px)" : "translateX(0)", transition: "transform 0.3s, color 0.3s" }}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-          </svg>
-        </div>
       </div>
     </Link>
   );
@@ -313,95 +211,30 @@ const ProduccionRow = ({ evento, idx }) => {
 export default function ProduccionesSection() {
   const headerPrincipalRef = useRef(null);
   const headerPrincipalVisible = useScrollReveal(headerPrincipalRef);
-  const headerCatalogoRef = useRef(null);
-  const headerCatalogoVisible = useScrollReveal(headerCatalogoRef);
 
-  const principales = producciones.filter(p => p.principal);
-  const catalogo = producciones.filter(p => !p.principal);
+  const principales = producciones;
+  const catalogo = [];
 
   return (
     <section id="producciones" className="relative w-full bg-black">
 
-      {/* HERO */}
       <Hero />
 
-      {/* PRODUCCIONES PRINCIPALES */}
-      <div className="relative w-full py-20 lg:py-32 px-6 md:px-12 lg:px-20">
-        <div className="absolute inset-0 pointer-events-none opacity-[0.025]"
-          style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")`, backgroundSize: "200px" }} />
-
-        <div className="max-w-7xl mx-auto relative z-10">
-          <div
-            ref={headerPrincipalRef}
-            className="mb-16 lg:mb-20"
-            style={{
-              opacity: headerPrincipalVisible ? 1 : 0,
-              transform: headerPrincipalVisible ? "translateY(0)" : "translateY(28px)",
-              transition: "opacity 0.7s ease, transform 0.7s ease",
-            }}
-          >
-            <div className="flex items-center gap-4 mb-6">
-              <div className="w-12 h-px bg-red-600" />
-              <span className="text-red-600 text-xs font-mono uppercase tracking-[0.3em]">Destacadas</span>
-            </div>
-            <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-3xl xl:text-4xl font-black text-[#f4f4f4]">
+      <div className="relative w-full py-20 px-6">
+        <div className="max-w-7xl mx-auto">
+          <div ref={headerPrincipalRef}>
+            <h2 className="text-3xl text-white mb-10">
               Producciones
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {principales.map((evento, idx) => (
               <ProduccionCard key={evento.slug} evento={evento} idx={idx} />
             ))}
           </div>
         </div>
       </div>
-
-      {/* CATÁLOGO CINEMATOGRÁFICO */}
-      {catalogo.length > 0 && (
-        <div className="relative w-full py-20 lg:py-32 px-6 md:px-12 lg:px-20"
-          style={{ borderTop: "1px solid #111" }}>
-
-          <div className="max-w-7xl mx-auto relative z-10">
-            <div
-              ref={headerCatalogoRef}
-              className="mb-16 lg:mb-20"
-              style={{
-                opacity: headerCatalogoVisible ? 1 : 0,
-                transform: headerCatalogoVisible ? "translateY(0)" : "translateY(28px)",
-                transition: "opacity 0.7s ease, transform 0.7s ease",
-              }}
-            >
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-12 h-px bg-red-600" />
-                <span className="text-red-600 text-xs font-mono uppercase tracking-[0.3em]">Catálogo</span>
-              </div>
-              <div className="flex items-end justify-between gap-6 flex-wrap">
-                <h2 className="text-3xl sm:text-4xl md:text-4xl lg:text-3xl xl:text-4xl font-black text-[#f4f4f4]">
-                  Todos los eventos
-                </h2>
-                <span className="font-black leading-none select-none"
-                  style={{ fontFamily: "'Bebas Neue', 'Impact', sans-serif", fontSize: "clamp(3rem, 6vw, 5rem)", color: "#111" }}>
-                  {String(catalogo.length).padStart(2, "0")}
-                </span>
-              </div>
-            </div>
-
-            <div>
-              {catalogo.map((evento, idx) => (
-                <ProduccionRow key={evento.slug} evento={evento} idx={idx} />
-              ))}
-              <div className="w-full h-px bg-[#1a1a1a]" />
-            </div>
-
-            <div className="mt-16 flex items-center gap-6">
-              <div className="flex-1 h-px bg-[#111]" />
-              <span className="text-[#222] text-[10px] font-mono uppercase tracking-[0.3em]">Más eventos en camino</span>
-              <div className="flex-1 h-px bg-[#111]" />
-            </div>
-          </div>
-        </div>
-      )}
 
     </section>
   );
