@@ -101,7 +101,7 @@ export default function ProduccionDetalle({ produccion }) {
   const siguiente = () => setLightboxIndice(i => (i + 1) % lightboxFotos.length);
   const anterior = () => setLightboxIndice(i => (i - 1 + lightboxFotos.length) % lightboxFotos.length);
 
-  // — Dividir fotos por banda (3 galerías usando mismo array para prueba)
+  // — Dividir fotos por banda
   const galerias = produccion.bandas?.map(() => fotos) || [];
 
   return (
@@ -225,39 +225,56 @@ export default function ProduccionDetalle({ produccion }) {
                 </div>
               )}
 
-              {/* Descripción */}
-              <div className="pt-2">
-                <p className="text-gray-400 text-sm md:text-base leading-relaxed font-light">{produccion.descripcion}</p>
-              </div>
+            {/* Descripción */}
+            <div className="pt-2">
+              <p className="text-sm sm:text-base md:text-base lg:text-sm xl:text-lg leading-relaxed text-[#f4f4f4]">{produccion.descripcion}</p>
             </div>
+          </div>
 
-            {/* ——— GALERÍAS POR BANDA ——— */}
-            {produccion.bandas && produccion.bandas.length > 0 && galerias.map((galeria, bIdx) => (
-              <div key={bIdx} className="pt-4">
-                <p className="text-[10px] font-mono uppercase tracking-[0.3em] text-[#444] mb-3">
-                  Fotos de {produccion.bandas[bIdx]}
+         {/* ——— GALERÍAS POR BANDA ——— */}
+          {produccion.bandas?.map((banda, idx) => {
+            return (
+              <div key={idx} className="pt-4">
+                <p  className="text-sm sm:text-base lg:text-sm px-3 sm:px-5 lg:px-4 py-2 sm:py-3 lg:py-2  text-[#f4f4f4] font-bold uppercase tracking-wide mb-3">
+                  {banda.nombre}
                 </p>
-               <div className="grid grid-cols-3 gap-2">
-                  {galeria.slice(0, 3).map((foto, i) => (
-                    <div
-                      key={i}
-                      className="group relative overflow-hidden cursor-pointer"
-                      onClick={() => abrirLightbox(galeria, i)}
-                    >
-                      <img
-                        src={foto}
-                        alt={`Foto ${i + 1}`}
-                        className="w-full aspect-square object-cover transition-transform duration-300 group-hover:scale-105"
-                      />
-                      <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/30">
-                        <span className="text-white text-lg">+</span>
+
+                <div className="grid grid-cols-3 gap-2">
+                  {banda.fotos.slice(0, 3).map((foto, i) => {
+                    const isLast = i === 2 && banda.fotos.length > 3;
+
+                    return (
+                      <div
+                        key={i}
+                        className="group relative overflow-hidden cursor-pointer"
+                        onClick={() => abrirLightbox(banda.fotos, i)}
+                      >
+                        <img
+                          src={foto}
+                          alt={`Foto ${i + 1}`}
+                          className="w-full aspect-square object-cover transition-transform duration-300 group-hover:scale-105"
+                        />
+
+                        {/* Hover normal */}
+                        <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/30">
+                          <span className="text-white text-lg">+</span>
+                        </div>
+
+                        {/* Indicador de más fotos */}
+                        {isLast && (
+                          <div className="absolute inset-0 flex items-center justify-center bg-black/60">
+                            <span className="text-white text-xl font-semibold">
+                              +{banda.fotos.length - 3}
+                            </span>
+                          </div>
+                        )}
                       </div>
-                    </div>
-                  ))}
+                    );
+                  })}
                 </div>
               </div>
-            ))}
-
+            );
+          })}
           </div>
         </div>
       </div>
