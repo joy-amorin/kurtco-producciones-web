@@ -14,10 +14,10 @@ export default function Navbar() {
     { name: "Quienes Somos", href: "/#about" },
     { name: "Servicios", href: "/#servicios" },
     { name: "Bandas", href: "/#bandas" },
-    { name: "Producciones", href: "/producciones" },
-    { name: "Eventos", href: "/calendario", submenu: [
+    { name: "Eventos", href: "/eventos" },
+    { name: "Calendario", href: "/calendario", submenu: [
         { name: "Próximos eventos", href: "/calendario-eventos/proximos" },
-        { name: "Eventos realizados", href: "/calendario-eventos/realizados" },
+        { name: "Historial de eventos", href: "/calendario-eventos/realizados" },
       ] 
     },
     { name: "Contacto", href: "/#contacto" },

@@ -1,4 +1,4 @@
-export const producciones = [
+export const eventos = [
  {
   slug: "primer-lanzamiento",
   nombre: "Kurtco Producciones rock and roll: día uno",
@@ -61,7 +61,7 @@ export const producciones = [
     }
   ],
 
-  foto: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=1200&q=80",
+  foto: "/producciones-fotos/inauguracion1/dia-uno.jpg",
   videoUrl: null,
   youtubeId: "ScMzIvxBSi4",
 },
@@ -132,7 +132,7 @@ export const producciones = [
     }
   ],
 
-  foto: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=1200&q=80",
+  foto: "/producciones-fotos/inauguracion2/dia-dos.jpg",
   videoUrl: null,
   youtubeId: "ScMzIvxBSi4",
 }
