@@ -13,7 +13,9 @@ export default function Home() {
       <About />
       <Servicios />
       <Bandas />
-      <Contacto /> 
+      <Contacto />
+     
+
     </>
   );
 }
