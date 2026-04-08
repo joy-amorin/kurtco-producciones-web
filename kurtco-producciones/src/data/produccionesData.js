@@ -1,13 +1,13 @@
 export const eventos = [
  {
   slug: "primer-lanzamiento",
-  nombre: "Kurtco Producciones rock and roll: día uno",
+  nombre: "KurtCo Producciones rock and roll: día uno",
   subtitulo: "Inauguración de la Productora",
   fecha: "5 de diciembre, 2025",
   lugar: "El chamuyo",
   cantidadBandas: null,
   categoria: "Show en vivo",
-  descripcion: "La inauguración de Kurko Producciones comienza con una noche de rock en vivo junto a tres bandas, dando inicio a un espacio dedicado a la música y a los artistas emergentes",
+  descripcion: "La inauguración de KurtCo Producciones comienza con una noche de rock en vivo junto a tres bandas, dando inicio a un espacio dedicado a la música y a los artistas emergentes",
 
   bandas: [
     {
@@ -68,14 +68,14 @@ export const eventos = [
 
 {
   slug: "segundo-lanzamiento",
-  nombre: "Kurtco Producciones rock and roll: día dos",
+  nombre: "KurtCo Producciones rock and roll: día dos",
   subtitulo: "Segunda noche de la inauguración",
   fecha: "6 de diciembre, 2025",
   lugar: "El chamuyo",
   cantidadBandas: null,
   categoria: "Show en vivo",
   descripcion:
-   "La segunda jornada continúa con una nueva fecha en vivo, reafirmando el espíritu de Kurko Producciones y consolidando un espacio para la música emergente.",
+   "La segunda jornada continúa con una nueva fecha en vivo, reafirmando el espíritu de KurtCo Producciones y consolidando un espacio para la música emergente.",
 
   bandas: [
     {
