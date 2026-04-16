@@ -128,7 +128,7 @@ export default function ProduccionDetalle({ produccion }) {
 
             {/* Volver */}
             <Link
-              href="/producciones"
+              href="/eventos"
               className="inline-flex items-center gap-2 mb-10 transition-colors duration-200 group"
               style={{ color: "#555", textDecoration: "none" }}
               onMouseEnter={e => e.currentTarget.style.color = "#dc2626"}
@@ -140,16 +140,9 @@ export default function ProduccionDetalle({ produccion }) {
               <span className="text-xs font-mono uppercase tracking-[0.25em]">Volver</span>
             </Link>
 
-            {/* Categoría */}
-            <div className="flex items-center gap-4 mb-5">
-              <div className="w-12 h-px bg-red-600" />
-              <span className="text-red-600 text-xs font-mono uppercase tracking-[0.3em]">
-                {produccion.categoria || "Show en vivo"}
-              </span>
-            </div>
 
             {/* Título */}
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-[#f4f4f4] leading-none tracking-tight mb-4">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-[#f4f4f4] leading-none tracking-tight mb-4">
               {produccion.nombre}
             </h1>
 
