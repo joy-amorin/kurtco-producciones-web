@@ -8,8 +8,8 @@ const produccionesMap = {
   "segundo-lanzamiento": Lanzamiento2,
 };
 
-export default async function ProduccionDetail({ params }) {
-  const { slug } = params;
+export default await async function ProduccionDetail({ params }) {
+  const { slug } = await params;
 
   const ProduccionComponent = produccionesMap[slug];
   const produccion = eventos.find(p => p.slug === slug);
