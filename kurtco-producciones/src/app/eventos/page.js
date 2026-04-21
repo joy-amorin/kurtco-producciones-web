@@ -8,7 +8,7 @@ import Image from "next/image";
 const heroConfig = {
   videoUrl: null,
   youtubeId: null,
-  fotoFallback: "https://images.unsplash.com/photo-1501386761578-eaa54b4e6a4b?w=1600&q=80",
+  fotoFallback: null,
 };
 
 // ——————————————————————————————————————————
@@ -23,7 +23,7 @@ const useScrollReveal = (ref) => {
     );
     if (ref.current) observer.observe(ref.current);
     return () => observer.disconnect();
-  }, []);
+  }, [ref]);
   return visible;
 };
 
@@ -36,10 +36,11 @@ const Hero = () => {
   return (
     <div className="relative w-full bg-black py-8 md:py-12 overflow-hidden">
       {fotoFallback && (
-        <img
+        <Image
           src={fotoFallback}
           alt=""
-          className="absolute inset-0 w-full h-full object-cover opacity-30"
+          fill
+          className="object-cover opacity-30"
         />
       )}
       {!fotoFallback && (
@@ -136,7 +137,7 @@ export default function ProduccionesPage() {
   const principales = eventos;
 
   return (
-    <section id="producciones" className="relative w-full bg-black">
+    <section id="producciones" className="relative w-full bg-black overflow-hidden">
 
       <Hero />
 
