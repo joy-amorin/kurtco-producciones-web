@@ -105,10 +105,11 @@ const ProduccionCard = ({ evento, idx }) => {
           transition: "box-shadow 0.4s ease",
         }}
       >
-        <img
+        <Image
           src={evento.foto}
           alt={evento.nombre}
-          className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105"
+          fill
+          className="object-cover transition-all duration-700 group-hover:scale-105"
         />
         <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-all duration-300" />
         <div
