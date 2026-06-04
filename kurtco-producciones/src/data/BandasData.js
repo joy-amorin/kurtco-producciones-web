@@ -20,7 +20,7 @@ export const bandas = [
     {
       nombre: "Johnny Moon",
       slug: "johnny-moon",
-      foto:  "/bandas-fotos/johnny-moon.jpg", alt: "banda de rock buick 8 en vivo",
+      foto:  "/bandas-fotos/johnny-moon.jpg", alt: "banda de rock johnny moon",
       genero: "Rock Eléctrico",
     },
 
@@ -33,9 +33,9 @@ export const bandas = [
     },
 
     {
-      nombre: "Autos",
-      slug: "autos",
-      foto: "/bandas-fotos/autos.jpg",  alt: "banda de rock autos",
+      nombre: "Mancuso y Las Malas Lenguas",
+      slug: "mancuso-y-las-malas-lenguas",
+      foto: "/bandas-fotos/mancuso-y-las-malas-lenguas.jpg",  alt: "banda de rock mancuso y las malas lenguas",
       genero: "Rock Experimental",
   
     },
