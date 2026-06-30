@@ -135,5 +135,6 @@ export const eventos = [
   foto: "/producciones-fotos/inauguracion2/dia-dos.jpg",
   videoUrl: null,
   youtubeId: "ScMzIvxBSi4",
-}
+},
+
 ];

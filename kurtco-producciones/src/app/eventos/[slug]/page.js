@@ -1,20 +1,14 @@
 import Link from "next/link";
-import Lanzamiento1 from "./Lanzamiento1";
-import Lanzamiento2 from "./Lanzamiento2";
+import ProduccionDetalle from "./ProduccionDetalle";
 import { eventos } from "@/data/produccionesData";
 
-const produccionesMap = {
-  "primer-lanzamiento": Lanzamiento1,
-  "segundo-lanzamiento": Lanzamiento2,
-};
 
 export default await async function ProduccionDetail({ params }) {
   const { slug } = await params;
 
-  const ProduccionComponent = produccionesMap[slug];
   const produccion = eventos.find(p => p.slug === slug);
 
-  if (!ProduccionComponent) {
+  if (!produccion) {
     return (
       <section className="min-h-screen bg-black text-white flex flex-col items-center justify-center">
         <p className="text-xl mb-6">Evento no encontrado.</p>
@@ -28,5 +22,5 @@ export default await async function ProduccionDetail({ params }) {
     );
   }
 
-  return <ProduccionComponent produccion={produccion} />;
+  return <ProduccionDetalle produccion={produccion} />;
 }
