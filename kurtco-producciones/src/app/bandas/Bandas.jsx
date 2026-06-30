@@ -1,9 +1,15 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import { bandas } from "@/data/BandasData";
 
 const BandsSection = () => {
+  const ITEMS_PER_PAGE = 6;
+  const [page, setPage] = useState(0);
+
+  const start = page * ITEMS_PER_PAGE;
+  const visibleBandas = bandas.slice(start, start + ITEMS_PER_PAGE);
+
   return (
     <section
       id="bandas"
@@ -11,18 +17,19 @@ const BandsSection = () => {
     >
       {/* Título de la sección */}
       <div className="max-w-7xl mx-auto mb-16 lg:mb-24 text-center">
-        <h2 
-            className="text-3xl sm:text-4xl md:text-4xl lg:text-3xl xl:text-4xl font-black text-[#f4f4f4] mb-6"
-            >
-            Bandas
+        <h2
+          className="text-3xl sm:text-4xl md:text-4xl lg:text-3xl xl:text-4xl font-black text-[#f4f4f4] mb-6"
+        >
+          Bandas
         </h2>
       </div>
 
       {/* Grid de bandas */}
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 lg:gap-8 -mt-10">
-          {bandas.map((banda, idx) => {
+          {visibleBandas.map((banda, idx) => {
             const slug = banda.nombre.toLowerCase().replace(/\s+/g, "-");
+
             return (
               <Link
                 key={idx}
@@ -64,6 +71,31 @@ const BandsSection = () => {
             );
           })}
         </div>
+
+        {/* Flechas de navegación */}
+        {bandas.length > ITEMS_PER_PAGE && (
+          <div className="flex justify-center gap-6 mt-12">
+            <button
+              onClick={() => setPage((p) => Math.max(p - 1, 0))}
+              disabled={page === 0}
+              className="px-4 py-2 border border-red-600 text-red-600 disabled:opacity-30 disabled:cursor-not-allowed hover:bg-red-600 hover:text-white transition-colors"
+            >
+              ←
+            </button>
+
+            <button
+              onClick={() => {
+                if (start + ITEMS_PER_PAGE < bandas.length) {
+                  setPage((p) => p + 1);
+                }
+              }}
+              disabled={start + ITEMS_PER_PAGE >= bandas.length}
+              className="px-4 py-2 border border-red-600 text-red-600 disabled:opacity-30 disabled:cursor-not-allowed hover:bg-red-600 hover:text-white transition-colors"
+            >
+              →
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );

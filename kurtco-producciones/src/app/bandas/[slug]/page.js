@@ -5,6 +5,7 @@ import SalioLaFotoBanda from "./SalioLaFotoBanda"
 import JohnnyMoonBanda from "./JohnnyMoonBanda"
 import RetroalcanceBanda from "./RetroalcanceBanda"
 import MancusoLasMalasLenguasBanda from "./MancusoLasMalasLenguasBanda"
+import BorgiaBanda from "./BorgiaBanda"
 
 const bandasMap = {
   "buick-8": BuickBanda,
@@ -13,6 +14,7 @@ const bandasMap = {
   "johnny-moon": JohnnyMoonBanda,
   "retroalcance": RetroalcanceBanda,
   "mancuso-y-las-malas-lenguas": MancusoLasMalasLenguasBanda,
+  "borgia": BorgiaBanda
 };
 
 export default async function BandDetail({ params }) {

@@ -39,4 +39,13 @@ export const bandas = [
       genero: "Rock Experimental",
   
     },
+
+     {
+      nombre: "Borgia",
+      slug: "borgia",
+      foto: "/bandas-fotos/borgia.jpeg",  alt: "banda de rock borgia",
+      genero: "Rock gótico",
+  
+    },
+    
   ];
