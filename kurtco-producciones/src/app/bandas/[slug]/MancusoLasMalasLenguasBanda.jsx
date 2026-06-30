@@ -32,7 +32,7 @@ export default function MancusoLasMalasLenguasBanda() {
         {/* Bio */}
         <div className="w-full lg:w-1/2 flex flex-col justify-start">
           <h1 className="text-3xl sm:text-4xl md:text-4xl lg:text-3xl xl:text-4xl font-black text-red-600 mb-3">
-            Mancuso y Las Malas Lenguas
+            Mancuso & Las Malas Lenguas
           </h1>
 
           <p className="text-sm sm:text-base md:text-base lg:text-sm xl:text-lg leading-relaxed text-[#f4f4f4] mb-3">
