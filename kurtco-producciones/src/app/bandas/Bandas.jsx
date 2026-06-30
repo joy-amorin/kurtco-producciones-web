@@ -28,12 +28,12 @@ const BandsSection = () => {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 lg:gap-8 -mt-10">
           {visibleBandas.map((banda, idx) => {
-            const slug = banda.nombre.toLowerCase().replace(/\s+/g, "-");
+            const slug = banda.slug;
 
             return (
               <Link
                 key={idx}
-                href={`/bandas/${slug}`}
+                href={`/bandas/${banda.slug}`}
                 className="group relative aspect-[3/2] overflow-hidden rounded-sm transition-all duration-300 hover:-translate-y-2"
                 style={{
                   boxShadow: "0 4px 20px rgba(0,0,0,0.5)",

@@ -26,14 +26,14 @@ export const bandas = [
 
     {
       nombre: "Retroalcance",
-      slug: "retoralcance",
+      slug: "retroalcance",
       foto: "/bandas-fotos/retroalcance.jpg", alt: "banda de rock retroalcance",
       genero: "Rock Experimental",
   
     },
 
     {
-      nombre: "Mancuso y Las Malas Lenguas",
+      nombre: "Mancuso & Las Malas Lenguas",
       slug: "mancuso-y-las-malas-lenguas",
       foto: "/bandas-fotos/mancuso-y-las-malas-lenguas.jpg",  alt: "banda de rock mancuso y las malas lenguas",
       genero: "Rock Experimental",
@@ -47,5 +47,6 @@ export const bandas = [
       genero: "Rock gótico",
   
     },
+
     
   ];
