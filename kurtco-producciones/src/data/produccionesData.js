@@ -174,7 +174,7 @@ export const eventos = [
   slug: "mdeo-enchufado-2",
   nombre: "Montevideo Enchufado: primer ciclo, segunda fecha",
   subtitulo: "Primer ciclo",
-  fecha: "16 de mayo, 2026",
+  fecha: "13 de junio, 2026",
   lugar: "Indoor 1983",
   cantidadBandas: null,
   categoria: "Show en vivo",
