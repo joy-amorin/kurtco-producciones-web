@@ -102,7 +102,7 @@ const ProduccionCard = ({ evento, idx }) => {
       }}
     >
       <div
-        className="relative aspect-[16/10] overflow-hidden transition-all duration-300 group-hover:shadow-[0_12px_48px_rgba(0,0,0,0.7)]"
+        className="relative aspect-[14/8] overflow-hidden transition-all duration-300 group-hover:shadow-[0_12px_48px_rgba(0,0,0,0.7)]"
         style={{
           boxShadow: "0 4px 20px rgba(0,0,0,0.5)",
         }}

@@ -62,7 +62,7 @@ export const eventos = [
   ],
 
   foto: "/producciones-fotos/inauguracion1/dia-uno.jpg",
-  videoUrl: null,
+  videoUrl: "https://player.vimeo.com/video/1179283641",
   youtubeId: "ScMzIvxBSi4",
 },
 
@@ -133,6 +133,73 @@ export const eventos = [
   ],
 
   foto: "/producciones-fotos/inauguracion2/dia-dos.jpg",
+  videoUrl: "https://player.vimeo.com/video/1179303791",
+  youtubeId: "ScMzIvxBSi4",
+},
+
+{
+  slug: "mdeo-enchufado-1",
+  nombre: "Montevideo Enchufado: primer ciclo",
+  subtitulo: "Primer ciclo",
+  fecha: "16 de mayo, 2026",
+  lugar: "Indoor 1983",
+  cantidadBandas: null,
+  categoria: "Show en vivo",
+  descripcion: "Primera fecha del primer ciclo de Montevideo Enchufado.",
+  bandas: [
+    {
+      nombre: "Los lunes no existen / Retro alcance",
+      fotos: [
+        "/producciones-fotos/montevideo-enchufado/montevideo-enchufado-1/mdeo-enchufado-1.webp",
+        "/producciones-fotos/montevideo-enchufado/montevideo-enchufado-1/mdeo-enchufado-2.webp",
+        "/producciones-fotos/montevideo-enchufado/montevideo-enchufado-1/mdeo-enchufado-3.webp",
+        "/producciones-fotos/montevideo-enchufado/montevideo-enchufado-1/mdeo-enchufado-4.webp",
+        "/producciones-fotos/montevideo-enchufado/montevideo-enchufado-1/mdeo-enchufado-5.webp",
+        "/producciones-fotos/montevideo-enchufado/montevideo-enchufado-1/mdeo-enchufado-6.webp",
+        "/producciones-fotos/montevideo-enchufado/montevideo-enchufado-1/mdeo-enchufado-7.webp",
+        "/producciones-fotos/montevideo-enchufado/montevideo-enchufado-1/mdeo-enchufado-8.webp",
+        "/producciones-fotos/montevideo-enchufado/montevideo-enchufado-1/mdeo-enchufado-9.webp",
+        "/producciones-fotos/montevideo-enchufado/montevideo-enchufado-1/mdeo-enchufado-10.webp",
+        "/producciones-fotos/montevideo-enchufado/montevideo-enchufado-1/mdeo-enchufado-11.webp",
+      ]
+    },
+    
+  ],
+
+  foto: "/producciones-fotos/montevideo-enchufado/mdeo-enchufado-1.png",
+  videoUrl: null,
+  youtubeId: "ScMzIvxBSi4",
+},
+{
+  slug: "mdeo-enchufado-2",
+  nombre: "Montevideo Enchufado: primer ciclo, segunda fecha",
+  subtitulo: "Primer ciclo",
+  fecha: "16 de mayo, 2026",
+  lugar: "Indoor 1983",
+  cantidadBandas: null,
+  categoria: "Show en vivo",
+  descripcion: "Segunda fecha del primer ciclo de Montevideo Enchufado.",
+  bandas: [
+    {
+      nombre: "Borgia / Cadáveres ilustres",
+      fotos: [
+        "/producciones-fotos/montevideo-enchufado/montevideo-enchufado-2/mdeo-enchufado-1.webp",
+        "/producciones-fotos/montevideo-enchufado/montevideo-enchufado-2/mdeo-enchufado-2.webp",
+        "/producciones-fotos/montevideo-enchufado/montevideo-enchufado-2/mdeo-enchufado-3.webp",
+        "/producciones-fotos/montevideo-enchufado/montevideo-enchufado-2/mdeo-enchufado-4.webp",
+        "/producciones-fotos/montevideo-enchufado/montevideo-enchufado-2/mdeo-enchufado-5.webp",
+        "/producciones-fotos/montevideo-enchufado/montevideo-enchufado-2/mdeo-enchufado-6.webp",
+        "/producciones-fotos/montevideo-enchufado/montevideo-enchufado-2/mdeo-enchufado-7.webp",
+        "/producciones-fotos/montevideo-enchufado/montevideo-enchufado-2/mdeo-enchufado-8.webp",
+        "/producciones-fotos/montevideo-enchufado/montevideo-enchufado-2/mdeo-enchufado-9.webp",
+        "/producciones-fotos/montevideo-enchufado/montevideo-enchufado-2/mdeo-enchufado-10.webp",
+        "/producciones-fotos/montevideo-enchufado/montevideo-enchufado-2/mdeo-enchufado-11.webp",
+      ]
+    },
+    
+  ],
+
+  foto: "/producciones-fotos/montevideo-enchufado/mdeo-enchufado-2.jpeg",
   videoUrl: null,
   youtubeId: "ScMzIvxBSi4",
 },

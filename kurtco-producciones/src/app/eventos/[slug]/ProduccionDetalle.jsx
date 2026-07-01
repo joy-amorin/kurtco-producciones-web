@@ -91,7 +91,6 @@ export default function ProduccionDetalle({ produccion }) {
   const contentVisible = useScrollReveal(contentRef);
 
   const tieneYoutube = !!produccion.youtubeId;
-  const tieneVideoPropio = !!produccion.videoUrl;
   const fotos = produccion.fotos || [];
 
   const abrirLightbox = (fotosGaleria, idx) => {
@@ -104,7 +103,6 @@ export default function ProduccionDetalle({ produccion }) {
 
   // — Dividir fotos por banda
   const galerias = produccion.bandas?.map(() => fotos) || [];
-
   return (
     <div className="relative w-full min-h-screen bg-black text-[#f4f4f4]">
 
@@ -182,39 +180,21 @@ export default function ProduccionDetalle({ produccion }) {
 
             {/* Video */}
             <div className="flex flex-col gap-4">
-              {tieneYoutube && (
+              {produccion.videoUrl && (
                 <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
-                  <iframe
-                    src="https://player.vimeo.com/video/1179283641"
-                    style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}
+                    <iframe
+                    src={produccion.videoUrl}
+                    style={{
+                        position: "absolute",
+                        top: 0,
+                        left: 0,
+                        width: "100%",
+                        height: "100%",
+                    }}
                     frameBorder="0"
                     allow="autoplay; fullscreen; picture-in-picture"
                     allowFullScreen
-                    title="Presentacion Viernes"
-                  />
-                </div>
-              )}
-
-              {tieneVideoPropio && !tieneYoutube && (
-                <div style={{ position: "relative", background: "#111" }}>
-                  <video
-                    src={produccion.videoUrl}
-                    controls
-                    style={{ width: "100%", display: "block", maxHeight: 480, objectFit: "cover" }}
-                  />
-                </div>
-              )}
-
-              {!tieneYoutube && !tieneVideoPropio && (
-                <div className="flex items-center justify-center" style={{ aspectRatio: "16/9", background: "repeating-linear-gradient(135deg, #0a0a0a 0, #0a0a0a 12px, #111 12px, #111 24px)" }}>
-                  <div className="text-center">
-                    <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4" style={{ border: "1.5px solid #dc2626" }}>
-                      <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" style={{ color: "#dc2626" }}>
-                        <path d="M8 5v14l11-7z" />
-                      </svg>
-                    </div>
-                    <span className="text-[#333] text-xs font-mono uppercase tracking-widest">Video próximamente</span>
-                  </div>
+                    />
                 </div>
               )}
 
@@ -233,7 +213,7 @@ export default function ProduccionDetalle({ produccion }) {
                 </p>
 
                 <div className="grid grid-cols-3 gap-2">
-                  {banda.fotos.slice(0, 3).map((foto, i) => {
+                  {(banda.fotos ?? []).slice(0, 3).map((foto, i) => {
                     const isLast = i === 2 && banda.fotos.length > 3;
 
                     return (
