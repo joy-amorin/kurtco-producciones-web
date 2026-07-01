@@ -40,7 +40,7 @@ const Hero = () => {
           alt=""
           fill
           sizes="100vw"
-          className="object-cover opacity-30"
+          className="object-contain opacity-30"
         />
       ) : (
         <div
@@ -102,7 +102,7 @@ const ProduccionCard = ({ evento, idx }) => {
       }}
     >
       <div
-        className="relative aspect-[14/8] overflow-hidden transition-all duration-300 group-hover:shadow-[0_12px_48px_rgba(0,0,0,0.7)]"
+        className="relative aspect-[5/4] overflow-hidden transition-all duration-300 group-hover:shadow-[0_12px_48px_rgba(0,0,0,0.7)]"
         style={{
           boxShadow: "0 4px 20px rgba(0,0,0,0.5)",
         }}
@@ -147,7 +147,7 @@ export default function ProduccionesPage() {
 
       <div className="relative w-full py-6 px-6 bg-black">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {eventos.map((evento, idx) => (
               <ProduccionCard
                 key={evento.slug}
