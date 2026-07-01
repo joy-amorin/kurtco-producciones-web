@@ -38,7 +38,7 @@ export const eventos = [
     banda: "Salió la foto, Buick8",
     lugar: "Indoor 1983 - Luis Alberto de Herrera 28283",
     descripcion: "21 hs",
-    foto: "/eventos-fotos/MVD-enchufado.jpeg",
+    foto: "/eventos-fotos/montevideo-enchufado-3.jpeg",
   },
 
 
